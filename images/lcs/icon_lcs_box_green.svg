@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135.001" height="135" viewBox="0 0 135.001 135">
+    <defs>
+        <linearGradient id="8g5zs8zrja" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00e68a" stop-opacity=".58"/>
+            <stop offset="1" stop-color="#008852" stop-opacity=".58"/>
+        </linearGradient>
+    </defs>
+    <path data-name="패스 188" d="M0 0h134.973v134.918H0z" style="fill:url(#8g5zs8zrja)"/>
+    <path data-name="사각형 743" transform="translate(.027 .082)" style="fill:#00e585" d="M0 0h7v7H0z"/>
+    <path data-name="사각형 741" transform="translate(.027 128)" style="fill:#00e585" d="M0 0h7v7H0z"/>
+    <path data-name="사각형 742" transform="translate(128.001 .082)" style="fill:#00e585" d="M0 0h7v7H0z"/>
+    <path data-name="사각형 740" transform="translate(128.001 128)" style="fill:#00e585" d="M0 0h7v7H0z"/>
+</svg>

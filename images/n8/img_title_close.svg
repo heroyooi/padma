@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="897" height="66" viewBox="0 0 897 66">
+    <defs>
+        <filter id="xy8ve723sa">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="23" result="blur"/>
+            <feFlood flood-color="#038bcb" flood-opacity=".561" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-type="innerShadowGroup">
+        <g data-name="img_title_close" style="fill:#061225">
+            <path d="M880.675 65H16.324L1 40.646V25.27L16.323 1h864.353L896 25.27v15.374L880.675 65z" style="stroke:none"/>
+            <path d="M880.123 64 895 40.356V25.559L880.125 2H16.875L2 25.559v14.798L16.877 64h863.246m1.105 2H15.772L0 40.934V24.98L15.772 0h865.456L897 24.98v15.953L881.228 66z" style="stroke:none"/>
+        </g>
+        <g style="filter:url(#xy8ve723sa)">
+            <g data-name="img_title_close" style="fill:#fff">
+                <path d="M880.675 65H16.324L1 40.646V25.27L16.323 1h864.353L896 25.27v15.374L880.675 65z" style="stroke:none"/>
+                <path d="M880.123 64 895 40.356V25.559L880.125 2H16.875L2 25.559v14.798L16.877 64h863.246m1.105 2H15.772L0 40.934V24.98L15.772 0h865.456L897 24.98v15.953L881.228 66z" style="stroke:none"/>
+            </g>
+        </g>
+        <g data-name="img_title_close" style="fill:none">
+            <path d="M880.675 65H16.324L1 40.646V25.27L16.323 1h864.353L896 25.27v15.374L880.675 65z" style="stroke:none"/>
+            <path d="M880.123 64 895 40.356V25.559L880.125 2H16.875L2 25.559v14.798L16.877 64h863.246m1.105 2H15.772L0 40.934V24.98L15.772 0h865.456L897 24.98v15.953L881.228 66z" style="fill:#038bcb;stroke:none"/>
+        </g>
+    </g>
+</svg>

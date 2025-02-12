@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>N8 Operation Status Monitoring</title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="dashboard-n8">
+      <div class="n8-map-wrap"></div><!-- 지도 영역 -->
+      <h1><img src="images/n8/top_tit.svg" alt="N8 Operation Status Monitoring" /></h1>
+      <div class="n8-road-wrap">
+        <div class="n8-flo-wrp lt">
+          <div class="n8-flo-cont">
+            <div class="n8-flo-text t1">Traffic Volume</div>
+            <div class="n8-flo-detail">
+              <div class="n8-flo-inner">
+                <a href="#" class="btn-close"></a>
+                <ul class="traffic-volume">
+                  <li>
+                    <dl>
+                      <dt class="motorcycle"><span class="num"></span></dt>
+                      <dd>Motorcycle</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="car"><span class="num"></span></dt>
+                      <dd>Car/Jeep</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="pickup"><span class="num"></span></dt>
+                      <dd>Pickup</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="microbus"><span class="num"></span></dt>
+                      <dd>Micro Bus</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="minibus"><span class="num"></span></dt>
+                      <dd>Mini Bus</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="mediumbus"><span class="num"></span></dt>
+                      <dd>Medium Bus</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="bigbus"><span class="num"></span></dt>
+                      <dd>Big Bus</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="minitruck"><span class="num"></span></dt>
+                      <dd>Mini Truck</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="mediumtruck_5to8"><span class="num"></span></dt>
+                      <dd>Medium Truck<span class="tiny">(8to11)</span></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="mediumtruck_8to11"><span class="num"></span></dt>
+                      <dd>Truck<span class="tiny">(3Axle)</span></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="trailer_above_4axle"><span class="num"></span></dt>
+                      <dd>Trailer<span class="tiny">(4Axle)</span></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <div class="total-wrp">
+                      <span class="label">Total</span>
+                      <span class="num"></span>
+                      <span class="unit">Units</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="n8-flo-cont">
+            <div class="n8-flo-text t2">Equipment status</div>
+            <div class="n8-flo-detail">
+              <div class="n8-flo-inner">
+                <a href="#" class="btn-close"></a>
+                <ul class="equiment-list">
+                  <li class="warning">
+                    <dl>
+                      <dt><div><em>1</em>/4</div></dt>
+                      <dd>VMS</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><div><em>0</em>/50</div></dt>
+                      <dd>CCTV</dd>
+                    </dl>
+                  </li>
+                  <li class="warning">
+                    <dl>
+                      <dt><div><em>2</em>/18</div></dt>
+                      <dd>VDS</dd>
+                    </dl>
+                  </li>
+                  <li class="warning">
+                    <dl>
+                      <dt><div><em>1</em>/8</div></dt>
+                      <dd>LCS</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="n8-flo-wrp rt">
+          <div class="n8-flo-cont">
+            <div class="n8-flo-text t3">Incidentes</div>
+            <div class="n8-flo-detail">
+              <div class="n8-flo-inner">
+                <a href="#" class="btn-close"></a>
+                <div class="acc-slide" id="acc-incident">
+                  <div class="slick-slide">
+                    <div class="acc-cont warning">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont warning">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont warning">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Weather/Disaters</span>
+                      </div>
+                      <span class="date">dd-mm-yyyy hh:mm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="n8-flo-cont">
+            <div class="n8-flo-text t4">Today's schedule</div>
+            <div class="n8-flo-detail">
+              <div class="n8-flo-inner">
+                <a href="#" class="btn-close"></a>
+                <div class="acc-slide" id="acc-today">
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Traffic accidents</span>
+                      </div>
+                      <span class="date">hh:mm ~ hh:mm</span>
+                    </div>
+                  </div>
+                  <div class="slick-slide">
+                    <div class="acc-cont">
+                      <div class="tx-wrp">
+                        <span class="label">Register</span>
+                        <span class="title">Traffic accidents</span>
+                      </div>
+                      <span class="date">hh:mm ~ hh:mm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="zcode" style="left:105px; top:535px;">Z8402</span>
+        <span class="zcode" style="left:2777px; top:128px;">Z8207</span>
+        <span class="zcode" style="left:3670px; top:98px;">Z8003</span>
+        <span class="zcode" style="left:3423px; top:224px;">Z8204</span>
+        <span class="zcode" style="left:3326px; top:364px;">Z8204</span>
+        <span class="zcode" style="left:3305px; top:588px;">R820</span>
+        <span class="zcode" style="left:4462px; top:268px;">Z8203</span>
+        <span class="zcode" style="left:4552px; top:394px;">Z8203</span>
+        <span class="zcode" style="left:6099px; top:618px;">R812</span>
+        <span class="zcode" style="left:4065px; top:1297px;">Z8012</span>
+        <span class="zcode" style="left:4449px; top:1458px;">Z8065</span>
+
+        <span class="ico emer" style="left: 4368px; top: 527px; display: none;"><img src="images/icon_emer.png" alt="" /></span>
+
+        <span class="ico vms" style="left: 4294px; top: 158px; display: none;"><img src="images/n8/icon_vms.svg" alt=""></span>
+        <span class="ico cctv1" style="left: 4436px; top: 372px; display: none;"><img src="images/n8/icon_cctv.svg" alt=""></span>
+        <span class="ico vms" style="left: 1902px; top: 1204px; display: none;"><img src="images/n8/icon_vms.svg" alt=""></span>
+        <span class="ico vms" style="left: 2027px; top: 1276px; display: none;"><img src="images/n8/icon_vms.svg" alt=""></span>
+        <span class="ico vms" style="left: 2327px; top: 1204px; display: none;"><img src="images/n8/icon_vds.svg" alt=""></span>
+        <span class="ico vms" style="left: 2527px; top: 1276px; display: none;"><img src="images/n8/icon_sign.svg" alt=""></span>
+
+        <div class="layer-wrp">
+          <div class="ico-layer">
+            <ul>
+              <li class="vms"></li>
+              <li class="cctv"></li>
+              <li class="vds"></li>
+              <li class="shuffle"></li>
+            </ul>
+          </div>
+          <a href="#" class="btn-layer"></a>
+        </div>
+      </div><!-- .n8-road-wrap -->
+
+      <div class="cctv-wrap cc1">
+        <span class="i-cctv" style="left: 42px;"></span>
+        <span class="i-cctv" style="left: 237px;"></span>
+        <span class="i-cctv" style="left: 364px;"></span>
+        <span class="i-cctv" style="left: 647px;"></span>
+        <span class="i-cctv" style="left: 774px;"></span>
+        <span class="i-cctv" style="left: 1057px;"></span>
+        <span class="i-cctv" style="left: 1380px;"></span>
+        <span class="i-cctv" style="left: 1521px;"></span>
+        <span class="i-cctv" style="left: 1790px;"></span>
+        <span class="i-cctv" style="left: 2076px;"></span>
+        <span class="i-cctv" style="left: 2363px;"></span>
+        <span class="i-cctv" style="left: 2530px;"></span>
+        <span class="i-cctv" style="left: 2827px;"></span>
+        <span class="i-cctv" style="left: 4546px;"></span>
+        <span class="i-cctv" style="left: 4789px;"></span>
+        <span class="i-cctv" style="left: 5066px;"></span>
+        <span class="i-cctv" style="left: 5460px;"></span>
+        <span class="i-cctv" style="left: 5659px;"></span>
+        <span class="i-cctv" style="left: 6041px;"></span>
+        <span class="i-cctv" style="left: 6560px;"></span>
+        <span class="i-cctv" style="left: 6811px;"></span>
+        <span class="i-cctv" style="left: 7088px;"></span>
+        <span class="i-cctv" style="left: 7479px;"></span>
+        <span class="i-line gubun" style="left: 1197px; top: 15px;">R820</span>
+        <span class="i-line gubun" style="left: 6284px; top: 15px;">N804</span>
+      </div>
+
+      <div class="route-wrap">
+        <span class="i-vms i-lcs" style="left: 131px; top: 60px;">VMS</span>
+        <em class="iv-co green left" style="left: 129px; top: 6px;"></em>
+        <em class="iv-num yellow" style="left: 194px; top: 6px;">25</em>
+        <span class="i-vds i-lcs" style="left: 1315px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 1928px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 2756px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 4827px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 5435px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 6016px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 6355px; top: 60px;">VDS</span>
+        <span class="i-vds i-lcs" style="left: 6670px; top: 60px;">VDS</span>
+        <em class="iv-co green left" style="right: 741px; top: 6px;"></em>
+        <em class="iv-num yellow" style="right: 685px; top: 6px;">25</em>
+        <span class="i-vds i-lcs" style="left: 7283px; top: 60px;">VDS</span>
+        <span class="i-vms i-lcs" style="left: 7428px; top: 60px;">VMS</span>
+
+        <div class="route-line line1">
+          <div class="route-obj red" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+          <div class="route-obj yellow" style="width: 10%;"></div>
+          <div class="route-obj yellow" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+          <div class="route-obj red" style="width: 10%;"></div>
+          <div class="route-obj red" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+        </div>
+
+        <div class="route-line line2">
+          <div class="route-obj green" style="width: 8%;"></div>
+          <div class="route-obj green" style="width: 7%;"></div>
+          <div class="route-obj yellow" style="width: 3%;"></div>
+          <div class="route-obj red" style="width: 6%;"></div>
+          <div class="route-obj red" style="width: 6%;"></div>
+          <div class="route-obj yellow" style="width: 10%;"></div>
+          <div class="route-obj yellow" style="width: 10%;"></div>
+          <div class="route-obj red" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+          <div class="route-obj yellow" style="width: 10%;"></div>
+          <div class="route-obj red" style="width: 10%;"></div>
+          <div class="route-obj green" style="width: 10%;"></div>
+        </div>
+
+        <span class="i-vms" style="left: 131px; bottom: 3px;">VMS</span>
+        <em class="iv-co green left" style="left: 244px; bottom: 70px;"></em>
+        <em class="iv-num yellow" style="left: 300px; bottom: 70px;">25</em>
+        
+        <span class="i-vds" style="left: 491px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 1110px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 1485px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 2440px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 2954px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 4962px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 5634px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 6148px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 6772px; bottom: 3px;">VDS</span>
+        <span class="i-vds" style="left: 7144px; bottom: 3px;">VDS</span>
+        <span class="i-vms" style="left: 7263px; bottom: 3px;">VMS</span>
+        <em class="iv-co green left" style="right: 339px; bottom: 70px;"></em>
+        <em class="iv-num yellow" style="right: 283px; bottom: 70px;">25</em>
+
+        <span class="ico emer" style="left: 2417px; top: 73.4px; display: none;"><img src="images/icon_emer.png" alt="" /></span>
+      </div>
+      <div class="cctv-wrap cc2">
+        <span class="i-cctv" style="left: 42px;"></span>
+        <span class="i-cctv" style="left: 237px;"></span>
+        <span class="i-cctv" style="left: 364px;"></span>
+        <span class="i-cctv" style="left: 647px;"></span>
+        <span class="i-cctv" style="left: 774px;"></span>
+        <span class="i-cctv" style="left: 1057px;"></span>
+        <span class="i-cctv" style="left: 1380px;"></span>
+        <span class="i-cctv" style="left: 1521px;"></span>
+        <span class="i-cctv" style="left: 1790px;"></span>
+        <span class="i-cctv" style="left: 2076px;"></span>
+        <span class="i-cctv" style="left: 2363px;"></span>
+        <span class="i-cctv" style="left: 2530px;"></span>
+        <span class="i-cctv" style="left: 2827px;"></span>
+        <span class="i-cctv" style="left: 4546px;"></span>
+        <span class="i-cctv" style="left: 4789px;"></span>
+        <span class="i-cctv" style="left: 5066px;"></span>
+        <span class="i-cctv" style="left: 5460px;"></span>
+        <span class="i-cctv" style="left: 5659px;"></span>
+        <span class="i-cctv" style="left: 6041px;"></span>
+        <span class="i-cctv" style="left: 6560px;"></span>
+        <span class="i-cctv" style="left: 6811px;"></span>
+        <span class="i-cctv" style="left: 7088px;"></span>
+        <span class="i-cctv" style="left: 7479px;"></span>
+
+        <span class="i-line" style="left: 1197px; top: 15px;">R820</span>
+        <span class="i-line" style="left: 6284px; top: 15px;">N804</span>
+      </div>
+
+      <div class="route-panel" style="left: 344px; bottom: 308px; display: none;">
+        <ul>
+          <li>
+            <span class="label">MAWA Direction</span>
+            <span class="min"><em class="red">17</em>MIN</span>
+          </li>
+          <li>
+            <span class="label">JANJIRA Direction</span>
+            <span class="min"><em class="green">9</em>MIN</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="popup-center">
+        <a href="#" class="btn-close"></a>
+        <p class="tit">· 03CT1029371 ·</p>
+        <div class="pic-wrp"><img src="https://via.placeholder.com/1412x864/485b5b/95ebeb?text=hoziron+img" alt="CCTV 사진" /></div>
+      </div><!-- .popup-center-->
+
+      <div class="n8-bottom-wrap">
+        <div class="n8-info-box n8-chat">
+          <div class="info-scroll">
+            <ul class="chat-list">
+              <li>
+                <span class="author">Dawoom Jung (1Team)</span>
+                <div class="chat-box">Please tell me the status of casualties. <br />Is there any damage to the facilities?</div>
+                <span class="date">16-11-2022 12:03</span>
+              </li>
+              <li>
+                <span class="author">Dawoom Jung (1Team)</span>
+                <div class="chat-box">There was an accident near the Mawa office, <br />so we are taking care of it.</div>
+                <span class="date">16-11-2022 12:03</span>
+              </li>
+              <li>
+                <span class="author">Dawoom Jung (1Team)</span>
+                <div class="chat-box">Please tell me the status of casualties. <br />Is there any damage to the facilities?</div>
+                <span class="date">16-11-2022 12:03</span>
+              </li>
+              <li>
+                <span class="author">Dawoom Jung (1Team)</span>
+                <div class="chat-box">There was an accident near the Mawa office, so we are taking care of it.</div>
+                <span class="date">16-11-2022 12:03</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="n8-info-box">
+          <div class="pic-wrp"><img src="https://via.placeholder.com/1349x601/485b5b/95ebeb?text=hoziron+img" alt="CCTV 사진" /></div>
+        </div>
+        <div class="n8-info-box">
+          <div class="pic-wrp"><img src="https://via.placeholder.com/1116x601/485b5b/95ebeb?text=hoziron+img" alt="CCTV 사진" /></div>
+        </div>
+        <div class="n8-info-box">
+          <div class="damage-info">
+            <p class="tit">Damage Of Human Life</p>
+            <ul>
+              <li>
+                <span class="num"></span>
+                <span class="label">Death</span>
+              </li>
+              <li>
+                <span class="num"></span>
+                <span class="label">Serious</span>
+              </li>
+              <li>
+                <span class="num"></span>
+                <span class="label">Injury</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="n8-control">
+          <div class="n8-control-t">
+            <a href="#" class="btn-next"></a>
+            <a href="#" class="btn-prev"></a>
+          </div>
+          <div class="n8-control-b">
+            <a href="#" class="btn-close"></a>
+          </div>
+        </div>
+      </div><!-- .n8-bottom-wrap -->
+
+    </div><!-- #dashboard -->
+  </div><!-- #wrapper -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.animateNumber.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/slick.js"></script>
+  <script>
+    function numberWithCommas(x) {
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+    var trafficAni = function(selector, number, speed) {
+      $('.traffic-volume ' + selector + ' .num').animateNumber({
+        number: number,
+        numberStep: function(now, tween) {
+          $(tween.elem).text(numberWithCommas(Math.floor(now)));
+        }
+      }, speed);  
+    }
+    trafficAni('.motorcycle', 12039, 3000);
+    trafficAni('.car', 6504, 3000);
+    trafficAni('.pickup', 1029, 3000);
+    trafficAni('.microbus', 4039, 3000);
+
+    trafficAni('.minibus', 2029, 3000);
+    trafficAni('.mediumbus', 3241, 3000);
+    trafficAni('.bigbus', 7648, 3000);
+    trafficAni('.minitruck', 1829, 3000);
+
+    trafficAni('.mediumtruck_5to8', 7860, 3000);
+    trafficAni('.mediumtruck_8to11', 1827, 3000);
+    trafficAni('.trailer_above_4axle', 231, 3000);
+
+    trafficAni('.total-wrp', 48546, 3000);
+
+    $('.layer-wrp .btn-layer').on('click', function(e){
+      e.preventDefault();
+      if (!$(this).closest('.layer-wrp').hasClass('on')) {
+        $(this).closest('.layer-wrp').addClass('on');
+        $('.n8-road-wrap .ico').show();
+      } else {
+        $(this).closest('.layer-wrp').removeClass('on');
+        $('.n8-road-wrap .ico').hide();
+      }
+    });
+    $('.layer-wrp .ico-layer li').on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('on');
+    })
+
+    var accSlideI = $('#acc-incident').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      slidesToShow: $('#acc-incident .slick-slide').length < 5 ? $('#acc-incident .slick-slide').length : 5,
+      slidesToScroll: 1,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+    });
+    var accSlideT = $('#acc-today').slick({
+      // autoplay: true,
+      // autoplaySpeed: 3000,
+      slidesToShow: $('#acc-today .slick-slide').length < 5 ? $('#acc-today .slick-slide').length : 5,
+      slidesToScroll: 1,
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+    });
+
+    $('.n8-flo-cont .n8-flo-text').on('click', function(){
+      if (!$(this).closest('.n8-flo-cont').hasClass('on')) {
+        $(this).closest('.n8-flo-cont').addClass('on');
+        if ($(this).hasClass('t3')) {
+          accSlideI.slick('refresh');
+          accSlideI.slick('setPosition');
+        }
+        if ($(this).hasClass('t4')) {
+          accSlideT.slick('refresh');
+          accSlideT.slick('setPosition');
+        }
+      }
+    });
+    $('.n8-flo-inner .btn-close').on('click', function(e){
+      e.preventDefault();
+      $(this).closest('.n8-flo-cont').removeClass('on');
+    });
+    $('.i-cctv').on('click', function(){
+      if (!$(this).hasClass('on')) {
+        $('.i-cctv.on').removeClass('on');
+        $(this).addClass('on');
+        // $('.popup-center').fadeIn(300);
+      } else {
+        $(this).removeClass('on');
+        $('.popup-center').hide();
+      }
+    });
+    $('.popup-center .btn-close').on('click', function(e){
+      e.preventDefault();
+      $(this).closest('.popup-center').hide();
+      $('.i-cctv.on').removeClass('on');
+    });
+    $('.info-scroll').mCustomScrollbar({
+      theme:"minimal-dark",
+    });
+    $('.n8-control a.btn-close').on('click', function(e){
+      e.preventDefault();
+      $('.n8-bottom-wrap').hide();
+    });
+
+    // 시설물 장애 발생시 붉은색으로 깜빡임 효과
+    var eqInterval = setInterval(function(){
+      $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').toggleClass('warning');
+    }, 500);
+
+    // - 5초간 효과 발생 후 효과 중지 및 본 색깔 표출
+    setTimeout(function(){
+      clearInterval(eqInterval);
+      $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').removeClass('warning');
+    }, 5000);
+
+    var query = $.urlParam('sample');
+    if (query) {
+      setTimeout(function(){
+        if (query === '2') {
+          $('.layer-wrp .btn-layer').click();
+        } else if (query === '3') {
+          $('.n8-flo-text.t1, .n8-flo-text.t4').click();
+        } else if (query === '4' || query === '5' || query === '6' || query === '7') {
+          $('.n8-flo-text.t1, .n8-flo-text.t2, .n8-flo-text.t3, .n8-flo-text.t4').click();
+          if (query === '4') {
+            $('.route-panel').show();  
+          }
+          if (query === '5') {
+            $('.i-cctv:eq(2)').click();
+            $('.popup-center').fadeIn(300);
+          }
+          if (query === '6' || query === '7') {
+            $('.i-cctv:eq(2)').click();
+            $('.ico.emer').show();
+            if (query === '7') {
+              $('.n8-bottom-wrap').addClass('on');
+              $(".info-scroll").mCustomScrollbar("scrollTo", $('.chat-list').outerHeight());
+              var numArr = [0, 3, 1231];
+              $('.n8-bottom-wrap .damage-info li').each(function(i){
+                $(this).find('.num').animateNumber({
+                  number: numArr[i],
+                  numberStep: function(now, tween) {
+                    $(tween.elem).text(numberWithCommas(Math.floor(now)));
+                  }  
+                }, (i+1) * 500);
+              });
+            }
+          }
+          
+        }
+      }, 250);
+    }
+  </script>
+</body>
+</html>

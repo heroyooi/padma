@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>N8 Operation Status Monitoring</title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <div id="wrapper" class="half">
+    <div id="dashboard-data" class="type-2" style="background:#050a1c;">
+      <div class="data-row">
+        <div class="data-col data-s-state">
+          <p class="tit">Situational state</p>
+          <ul class="state-list">
+            <li class="warning">
+              <span class="label">Incident</span>
+              <span class="num">99</span>
+            </li>
+            <li class="warning">
+              <span class="label">Congestion</span>
+              <span class="num">0</span>
+            </li>
+            <li class="warning">
+              <span class="label">Event</span>
+              <span class="num">21</span>
+            </li>
+            <li class="warning">
+              <span class="label">Facility failure</span>
+              <span class="num">1</span>
+            </li>
+          </ul>
+        </div>
+        <div class="data-today">
+          <div class="data-col data-today-volume">
+            <p class="tit">Today's traffic volume</p>
+            <span class="result"><em id="res-1">54,509</em>(Unit)</span>
+          </div>
+          <div class="data-col data-today-tolls">
+            <p class="tit">Today's tolls</p>
+            <span class="result"><em id="res-2">20,231</em>(TK)</span>
+          </div>
+        </div>
+        <div class="data-col data-office">
+          <p class="tit">Traffic by Office</p>
+          <ul class="office-list">
+            <li>
+              <dl>
+                <dt>Dhaleshwari</dt>
+                <dd><em id="off-1-1"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Abdullahpurt</dt>
+                <dd><em id="off-1-2"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Sreenagar</dt>
+                <dd><em id="off-1-3"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Bhanga</dt>
+                <dd><em id="off-1-4"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Pulia</dt>
+                <dd><em id="off-1-5"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Maligram</dt>
+                <dd><em id="off-1-6"></em>(TK)</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="data-col data-office">
+          <p class="tit">Traffic by Office</p>
+          <ul class="office-list">
+            <li>
+              <dl>
+                <dt>Dhaleshwari</dt>
+                <dd><em id="off-2-1"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Abdullahpurt</dt>
+                <dd><em id="off-2-2"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Sreenagar</dt>
+                <dd><em id="off-2-3"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Bhanga</dt>
+                <dd><em id="off-2-4"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Pulia</dt>
+                <dd><em id="off-2-5"></em>(TK)</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Maligram</dt>
+                <dd><em id="off-2-6"></em>(TK)</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .data-row -->
+      <div class="data-row data-process-row">
+        <div class="data-col data-process">
+          <p class="tit">Business office violation rate</p>
+        </div>
+        <div class="data-col data-process">
+          <p class="tit">Iane communication</p>
+        </div>
+      </div><!-- .data-row -->
+      <div class="data-row data-bar-row">
+        <div class="data-col data-bar">
+          <p class="tit">Traffic by time zone</p>
+        </div>
+        <div class="data-col data-bar">
+          <p class="tit">a discount/exemption</p>
+        </div>
+      </div><!-- .data-row -->
+      <div class="data-row data-grh-row">
+        <div class="data-col data-grh">
+          <p class="tit">Traffic by time zone</p>
+        </div>
+        <div class="data-col data-grh">
+          <p class="tit">Traffic by day</p>
+        </div>
+        <div class="data-col data-grh">
+          <p class="tit">Traffic by month</p>
+        </div>
+      </div><!-- .data-row -->
+    </div><!-- #dashboard-data -->
+  </div><!-- #wrapper -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.animateNumber.js"></script>
+  <script>
+    // 시설물 장애 발생시 붉은색으로 깜빡임 효과
+    var eqInterval = setInterval(function(){
+      $('.data-s-state .state-list li').toggleClass('warning');
+    }, 500);
+
+    // - 5초간 효과 발생 후 효과 중지 및 본 색깔 표출
+    setTimeout(function(){
+      clearInterval(eqInterval);
+      $('.data-s-state .state-list li.warning').removeClass('warning');
+    }, 5000);
+
+    function numberWithCommas(x) {
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+    var countAni = function(selector, number, speed) {
+      $(selector).animateNumber({
+        number: number,
+        numberStep: function(now, tween) {
+          $(tween.elem).text(numberWithCommas(Math.floor(now)));
+        }
+      }, speed);  
+    }
+    countAni('#res-1', 54509, 3000);
+    countAni('#res-2', 20231, 3000);
+
+    countAni('#off-1-1', 24360, 3000);
+    countAni('#off-1-2', 30149, 3000);
+    countAni('#off-1-3', 24360, 3000);
+    countAni('#off-1-4', 30149, 3000);
+    countAni('#off-1-5', 30149, 3000);
+    countAni('#off-1-6', 30149, 3000);
+
+    countAni('#off-2-1', 24360, 3000);
+    countAni('#off-2-2', 30149, 3000);
+    countAni('#off-2-3', 24360, 3000);
+    countAni('#off-2-4', 30149, 3000);
+    countAni('#off-2-5', 30149, 3000);
+    countAni('#off-2-6', 30149, 3000);
+  </script>
+</body>
+</html>

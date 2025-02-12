@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #010809;
+        stroke: #ff2bea;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #ff2bea;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #010809;
+      }
+
+      .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="icon_vms" transform="translate(10709 -3967)">
+    <rect id="사각형_904" data-name="사각형 904" class="cls-1" width="94" height="94" transform="translate(-10709 3967)"/>
+    <g id="타원_13" data-name="타원 13" class="cls-2" transform="translate(-10704 3974)">
+      <circle class="cls-6" cx="40" cy="40" r="40"/>
+      <circle class="cls-7" cx="40" cy="40" r="42"/>
+    </g>
+    <rect id="사각형_125" data-name="사각형 125" class="cls-3" width="6" height="51" transform="translate(-10646 3991)"/>
+    <rect id="사각형_126" data-name="사각형 126" class="cls-3" width="2" height="18" transform="translate(-10660.5 3999) rotate(-90)"/>
+    <rect id="사각형_128" data-name="사각형 128" class="cls-3" width="28" height="39" transform="translate(-10689 4022) rotate(-90)"/>
+    <rect id="사각형_127" data-name="사각형 127" class="cls-3" width="2" height="18" transform="translate(-10660.5 4019) rotate(-90)"/>
+    <path id="패스_41" data-name="패스 41" class="cls-4" d="M-10664.268,4013.148v-10.166s.527-3.981-2.432-3.876-9.734,0-9.734,0" transform="translate(0 5.207)"/>
+    <path id="패스_42" data-name="패스 42" class="cls-5" d="M-10669.5,3997.516l-5.078,5.078,5.078,5.078" transform="translate(-2.395 1.717)"/>
+  </g>
+</svg>

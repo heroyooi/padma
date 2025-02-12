@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>N8 Operation Status Monitoring</title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+  <div id="wrapper" class="half">
+    <div id="n8-osm" style="background:#151c2b;">
+      <div class="osm-map-wrap"></div>
+      <h1><img src="images/n8/top_tit.svg" alt="N8 Operation Status Monitoring" /></h1>
+      <div class="osm-road-wrap">
+        <div class="osm-total">
+          <span class="label">Total</span>
+          <div class="count">
+            <span class="num"></span>
+            <span class="unit">(TK)</span>
+          </div>
+        </div>
+        <span class="osm-date">31 / 10 / 2022</span>
+        <div class="osm-box osm-box1">
+          <div class="ob-con">
+            <div class="tit-wrp">Tolls by time zone</div>
+            <div class="con-wrp">
+
+            </div>
+          </div>
+        </div>
+        <div class="osm-box osm-box2">
+          <div class="ob-con">
+            <div class="tit-wrp">Tolls by Office</div>
+            <div class="con-wrp">
+              <ul class="score-list">
+                <li class="on">
+                  <div>
+                    <span class="num">1</span>
+                    <span class="name">Dhaleshwari</span>
+                  </div>
+                  <div>
+                    <span class="count"></span>
+                    <span class="unit">(TK)</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="num">2</span>
+                    <span class="name">Bhanga</span>
+                  </div>
+                  <div>
+                    <span class="count"></span>
+                    <span class="unit">(TK)</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="num">3</span>
+                    <span class="name">Abdulahpur</span>
+                  </div>
+                  <div>
+                    <span class="count"></span>
+                    <span class="unit">(TK)</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="num">4</span>
+                    <span class="name">Sreenagar</span>
+                  </div>
+                  <div>
+                    <span class="count"></span>
+                    <span class="unit">(TK)</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="num">5</span>
+                    <span class="name">Pulia</span>
+                  </div>
+                  <div>
+                    <span class="count"></span>
+                    <span class="unit">(TK)</span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="num">6</span>
+                    <span class="name">Maligram</span>
+                  </div>
+                  <div>
+                    <span class="count"></span>
+                    <span class="unit">(TK)</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="osm-toll" style="left: 1875px; top: 723px;">
+          <span class="toll-obj info"></span>
+          <span class="toll-label">· Dhaleshwari toll plaza ·</span>
+        </div>
+
+        <div class="osm-box osm-small">
+          <div class="ob-con">
+            <p class="sm-tit">· Office Information ·</p>
+            <ul class="plaza-list">
+              <li>
+                <span class="label">Office ID</span>
+                <span class="sec">999</span>
+              </li>
+              <li>
+                <span class="label">Office Name</span>
+                <span class="sec">Abdullahpur</span>
+              </li>
+              <li>
+                <span class="label">Day Change Time</span>
+                <span class="sec">HH:MM</span>
+              </li>
+              <li>
+                <span class="label">Day Fin Time</span>
+                <span class="sec">HH:MM</span>
+              </li>
+              <li>
+                <span class="label">LSAM Charging amount (min)</span>
+                <span class="sec">0,000,000 tk</span>
+              </li>
+              <li>
+                <span class="label">Opening day</span>
+                <span class="sec">DD-MM-YYYY</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="osm-box osm-bottom">
+          <div class="ob-con">
+            <div class="tit-wrp">Payment systems by office</div>
+            <div class="con-wrp">
+              <ul class="payment-list">
+                <li>
+                  <p class="pay-tit">Dhaleshwari</p>
+                </li>
+                <li>
+                  <p class="pay-tit">Bhanga</p>
+                </li>
+                <li>
+                  <p class="pay-tit">Abdulahpur</p>
+                </li>
+                <li>
+                  <p class="pay-tit">Sreenagar</p>
+                </li>
+                <li>
+                  <p class="pay-tit">Pulia</p>
+                </li>
+                <li>
+                  <p class="pay-tit">Maligram</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- .osm-road-wrap -->
+    </div><!-- #n8-osm -->
+  </div><!-- #wrapper -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.animateNumber.js"></script>
+  <script>
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
+    }
+    var numArr = [254168700, 254168700, 254168700, 254168700, 254168700, 254168700];
+
+    $('.osm-total .count .num').animateNumber({
+      number: 854252900,
+      numberStep: function(now, tween) {
+        $(tween.elem).text(numberWithCommas(Math.floor(now)));
+      }  
+    }, 3000);
+    
+    $('.osm-box .score-list li').each(function(i){
+      $(this).find('.count').animateNumber({
+        number: numArr[i],
+        numberStep: function(now, tween) {
+          $(tween.elem).text(numberWithCommas(Math.floor(now)));
+        }  
+      }, (i+1) * 500);
+    });
+  </script>
+</body>
+</html>

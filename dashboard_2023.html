@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Padma Bridge Advanced Traffic Management System</title>
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="dashboard">
+        <h1>Padma Bridge Advanced Traffic Management System</h1>
+        <a href="#" class="graph"><span>Graph</span></a>
+        <div class="road-wrap">
+          <div class="road-l"></div>
+          <div class="road-r"></div>
+          <div class="road-area new">
+            <span class="edge lt lt1"></span>
+            <span class="edge lt lt2"></span>
+            <span class="edge rt rt1"></span>
+            <span class="edge rt rt2"></span>
+            <span class="edge lb lb1"></span>
+            <span class="edge lb lb2"></span>
+            <span class="edge rb rb1"></span>
+            <span class="edge rb rb2"></span>
+
+            <!-- 상단 레일 -->
+            <div class="railroad rail1">
+              <img src="images/img_railroad.svg" alt="" />
+            </div>
+
+            <span class="ico cctv2" style="left: 14px; top: 463px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 14px; top: 563px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <!-- LCS -->
+            <span class="lcs red" style="left: 782px; top: 173px"
+              ><img src="images/lcs/icon_lcs_noway.svg" alt=""
+            /></span>
+            <span class="lcs green" style="left: 937px; top: 173px"
+              ><img src="images/lcs/icon_lcs_pass.svg" alt=""
+            /></span>
+            <div class="lcs-box" style="left: 782px; top: 328px"></div>
+
+            <span class="ico tollgate open" style="left: 782px; top: 602px; z-index: 81;">
+              <span class="toll"
+                ><img src="images/img_toll_01.svg" alt=""
+              /></span>
+              <img src="images/icon_tollgate_open.svg" alt="" />
+              <span class="txt">Mawa</span>
+            </span>
+
+            <!-- S: 상행선 신규 노선 -->
+            <div class="svg-gradient-wrap svg-gradient-wrapN1-1">
+              <svg width="777.057" height="200.52">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-24879.811 17972.486c-.484 0-.965 0-1.443-.01l.551-38c.314 0 .635.006.955.006 16.527 0 39.768-7.391 48.07-9.732 41.377-11.777 77.3-31.576 96.3-43.176 14.8-10.4 39.2-24.682 56.2-38.8 9.4-7.4 34.922-26.223 35.2-26.4 28.8-17.8 48-25.508 48.963-25.912 87.475-34.461 164.42-10.7 172.189-8.133 43.412 12.566 101.953 48.855 110.586 54.566 11.367 6.395 22.43 13.482 32.83 19.447 38.705 22.2 78.8 45.625 175.068 59.816h.025l-.01.066.129-.049-5.658 37.576c-103.418-15.24-146.68-40.492-188.457-64.449-10.432-5.982-19.986-12.617-31.023-18.256-.061-.031-.383-.2-.705-.357-2.623-1.582-63.061-39.9-103.312-51.42l-.959-.3c-.641-.219-69.957-23.42-146.369 6.678a334.466 334.466 0 0 0-43.99 23.76c-10.314 6.639-27.086 18.217-31.131 21.879-7.395 6.156-43.377 32.283-64.5 45.16-8.971 5.516-58.117 32.65-101.01 44.857-1.459.424-33.176 11.183-58.499 11.183z" transform="translate(24881.254 -17771.967)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN2-1">
+              <svg width="836.773" height="135.514">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-23861.762 17968.2c-2.771 0-5.531-.008-8.332-.021-98.721-.5-177.146-5.217-239.754-14.416l5.523-37.6c60.826 8.939 137.506 13.523 234.422 14.014 2.816.014 5.633.021 8.414.021 178.137 0 287.754-28.986 393.83-57.035 62.293-16.471 121.131-32.029 189.951-40.479l4.633 37.715c-66.248 8.135-123.867 23.371-184.869 39.5-103.435 27.355-220.492 58.301-403.818 58.301z" transform="translate(24109.848 -17832.688)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN3-1">
+              <svg width="388.482" height="73.963">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22899.1 17900.08c-70.766-17.908-150.959-38.215-283.412-35.754a820.584 820.584 0 0 0-91.086 6.143l-4.66-37.715a858.1 858.1 0 0 1 95.15-6.422c137.422-2.566 220.252 18.414 293.332 36.908z" transform="translate(23278.256 -17826.117)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN4-1">
+              <svg width="175.494" height="71.23">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22727.758 17934.471c-63.039-6.936-114.037-19.865-163.354-32.369l-7.984-2.021 9.32-36.84 8 2.027c50.271 12.746 97.756 24.785 158.172 31.43z" transform="translate(22899.096 -17863.24)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN5-1">
+              <svg width="229.752" height="49.861">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22498.881 17946.559c-99.861-2.3-176.865-6.367-228.877-12.088l4.156-37.773c50.924 5.6 126.826 9.6 225.6 11.873z" transform="translate(22727.758 -17896.697)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN6-1">
+              <svg width="161.449" height="40.117">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22337.627 17948.688c-58.85-.3-113.1-1.02-161.254-2.129l.875-37.988c47.924 1.1 101.949 1.816 160.574 2.117z" transform="translate(22498.881 -17908.57)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN7-1">
+              <svg width="157.342" height="38.242">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22268.527 17948.857c-23.824 0-46.9-.057-69.1-.17l.2-38c48.568.25 101.373.227 156.943-.072l.2 38c-30.31.162-59.81.242-88.243.242z" transform="translate(22337.627 -17910.615)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN8-1">
+              <svg width="158.439" height="39.455">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22180.285 17948.615-.2-38c52.58-.281 105.656-.791 157.955-1.455l.484 38c-52.395.664-105.565 1.174-158.239 1.455z" transform="translate(22180.488 -17909.16)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN9-1">
+              <svg width="174.791" height="40.762">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22022.051 17947.156-.48-38c59.518-.756 118.113-1.713 174.076-2.766l.715 37.992a28005.403 28005.403 0 0 1-174.311 2.774z" transform="translate(22022.531 -17906.395)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN10-1">
+              <svg width="121.17" height="40.473">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-21847.74 17944.387-.715-37.992c41.947-.789 82.391-1.633 120.322-2.48l.848 37.992c-37.975.847-78.461 1.693-120.455 2.48z" transform="translate(21848.455 -17903.914)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN11-1">
+              <svg width="286.496" height="68.576">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-21727.285 17941.906-.848-37.992a40791.05 40791.05 0 0 0 176.449-4.33c9.1-.4 33.4-7.365 59.125-14.736 12.543-3.594 26.3-7.535 40.953-11.518l9.969 36.668c-14.473 3.936-28.066 7.83-40.455 11.379-31.543 9.037-54.332 15.568-68.246 16.184a41444.647 41444.647 0 0 1-176.947 4.345z" transform="translate(21728.133 -17873.33)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN12-1">
+              <svg width="238.621" height="68.061">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-21441.639 17910-9.965-36.668c57.182-15.541 131.957-33.115 203.225-31.258 12.133.32 24.041.973 35.4 1.939l-3.223 37.863c-10.619-.9-21.781-1.514-33.178-1.814-66.311-1.755-137.583 15.079-192.259 29.938z" transform="translate(21451.604 -17841.938)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN13-1">
+              <svg width="248.984" height="95.842">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20975.229 17939.854c-36.184-7.8-66.141-17.344-95.352-26.457-44.951-14.025-87.541-26.578-145.625-31.521l3.223-37.863c62.219 5.295 106.73 18.449 153.719 33.109 28.408 8.863 57.535 18.146 92.043 25.588z" transform="translate(21216.205 -17844.012)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN14-1">
+              <svg width="307.146" height="56.754">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20669.41 17959.459c-169.312-5.367-266.783-11.588-297.482-17.832a778.617 778.617 0 0 1-8.461-1.773l8.008-37.148 8.029 1.684c19.373 3.941 85.8 10.582 291.109 17.09z" transform="translate(20975.354 -17902.705)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN15-1">
+              <svg width="309.039" height="45.732">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20361.148 17967.211c-118.91-2.43-222.625-5.037-308.262-7.752l1.2-37.98c85.5 2.711 189.066 5.314 307.836 7.74z" transform="translate(20669.41 -17921.479)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN16-1">
+              <svg width="589.025" height="46.002">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19772.123 17975.221h-80.553c-2.67-.027-249.59-2.725-508.473-8.01l.777-37.992c258.7 5.281 505.439 7.977 507.9 8h80.348z" transform="translate(20361.148 -17929.219)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN17-1">
+              <svg width="608.908" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19163.215 17975.221h-608.908v-38h608.908z" transform="translate(19772.123 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN18-1">
+              <svg width="584.365" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-18578.85 17975.221h-584.365v-38h584.365z" transform="translate(19163.215 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN19-1">
+              <svg width="583.602" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17995.248 17975.221h-583.6v-38h583.6z" transform="translate(18578.85 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN20-1">
+              <svg width="629.002" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17366.246 17975.221h-629v-38h629z" transform="translate(17995.248 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            
+            <div class="svg-gradient-wrap svg-gradient-wrapN1-2">
+              <svg width="777.057" height="200.52">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-24877.219 17972.918c-1.947 0-3.807-.061-5.562-.191v-36.248c13.4.977 46.486-7.914 62.8-12.166 41.3-11.76 78.174-31.3 86.535-36.205 15.889-7.344 55.264-33.553 64.8-41.463 41.531-35.375 82.762-55.719 84.83-56.684 82.895-33.887 149.965-9.287 158.639-5.809 39.316 13.193 101.961 53.646 111.8 59.426 10.264 5.2 24 14.25 29.4 16.8 40.58 22.51 78.809 43.182 175.672 56.514l-5.18 37.645c-103.9-14.3-147.176-38.3-189.025-61.518-9.309-5.164-17.066-8.641-29.066-16.041-10.473-6.52-68.186-43.979-105.088-56.6-.186-.064-56.713-26.6-131.928 4.389a485.961 485.961 0 0 0-75.314 49.188c-7.146 5.961-51.648 37.561-74.406 49.025-1.547.883-4.861 3.064-8.992 5.285-15.594 8.379-48.557 23-82.676 32.707-4.952 1.296-42.53 11.946-67.239 11.946z" transform="translate(24882.781 -17772.275)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN2-2">
+              <svg width="843.975" height="135.965">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-23861.752 17968.2c-2.771 0-5.541-.008-8.342-.021-100.783-.512-180.4-4.975-243.393-13.643l5.18-37.645c61.326 8.438 139.309 12.783 238.4 13.287 2.818.014 5.643.021 8.426.021 178.164 0 287.76-28.99 393.824-57.043 63.4-16.768 123.279-32.605 193.684-40.922l4.457 37.738c-67.738 8-126.361 23.506-188.424 39.922-103.419 27.356-220.455 58.306-403.812 58.306z" transform="translate(24113.486 -17832.236)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN3-2">
+              <svg width="377.809" height="72.363">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22905.445 17898.475c-79.449-20.021-155.129-36.391-277.064-34.148a824.609 824.609 0 0 0-87 5.648l-4.457-37.738a861.385 861.385 0 0 1 90.863-5.9c126.486-2.363 204.8 14.6 286.945 35.295z" transform="translate(23273.969 -17826.111)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN4-2">
+              <svg width="181.84" height="72.844">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22727.754 17934.471-5.408-.613c-60.412-7.023-110.045-19.609-158.043-31.779l-14.24-3.6 9.285-36.848 14.295 3.617c48.949 12.412 95.186 24.135 153.1 30.869l5.156.584z" transform="translate(22905.445 -17861.627)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN5-2">
+              <svg width="233.641" height="50.408">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22500.4 17946.523c-99.047-2.3-175.539-6.354-227.354-12.053l-5.4-.613 4.41-37.742 5.146.582c50.734 5.58 126.125 9.563 224.084 11.838z" transform="translate(22733.162 -17896.115)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN6-2">
+              <svg width="163.447" height="40.15">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22337.152 17948.686c-59.8-.307-114.723-1.035-163.252-2.162l.883-37.988c48.3 1.121 103 1.846 162.564 2.15z" transform="translate(22500.404 -17908.535)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN7-2">
+              <svg width="156.109" height="38.236">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22268.014 17948.857c-23.863 0-46.955-.059-69.139-.172l.2-38c48.084.246 100.475.225 155.715-.064l.2 38c-29.901.156-58.97.236-86.976.236z" transform="translate(22337.152 -17910.621)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN8-2">
+              <svg width="158.604" height="39.447">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22181.043 17948.621-.2-38c52.467-.275 105.5-.781 158.123-1.447l.48 38c-52.715.666-105.842 1.172-158.403 1.447z" transform="translate(22181.242 -17909.174)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN9-2">
+              <svg width="175.381" height="40.771">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22022.639 17947.17-.48-38c59.6-.756 118.369-1.717 174.666-2.775l.715 37.992a28119.88 28119.88 0 0 1-174.901 2.783z" transform="translate(22023.119 -17906.398)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN10-2">
+              <svg width="121.584" height="40.484">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-21847.738 17944.391-.715-37.992c41.98-.791 82.494-1.637 120.736-2.492l.848 37.992a34483.9 34483.9 0 0 1-120.869 2.492z" transform="translate(21848.453 -17903.906)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN11-2">
+              <svg width="291.646" height="68.617">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-21726.869 17941.9-.848-37.992c66.918-1.492 126.666-2.02 175.738-3.328 9.1-.4 34-6.955 59.732-14.328 14.057-4.027 29.648-8.494 46.324-12.969l9.852 36.7c-16.457 4.418-31.84 8.826-45.709 12.8-31.555 9.041-50 15.2-68.855 15.775-49.451 1.317-109.254 1.842-176.234 3.342z" transform="translate(21727.717 -17873.281)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN12-2">
+              <svg width="227.494" height="67.744">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-21435.979 17909.693-9.852-36.7c51-13.691 126.615-32.754 197.451-30.922 10.2.27 20.309.777 30.043 1.514l-2.859 37.891a579.814 579.814 0 0 0-28.186-1.416c-65.918-1.789-137.888 16.559-186.597 29.633z" transform="translate(21445.83 -17841.949)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN13-2">
+              <svg width="245.672" height="95.27">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20983.979 17938.854c-32.488-7.418-60.479-15.508-87.32-23.885-46.172-14.408-89.264-28.924-149.895-33.49l2.855-37.895c64.955 4.895 110.059 20.037 158.359 35.109 26.146 8.16 53.416 16.025 84.457 23.113z" transform="translate(21221.193 -17843.584)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN14-2">
+              <svg width="314.523" height="57.951">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20670.361 17959.43c-168.766-5.365-265.668-11-296.275-17.223a738.913 738.913 0 0 1-17.041-3.682l8.449-37.047a688.166 688.166 0 0 0 16.166 3.49c19.313 3.93 85.275 9.975 289.908 16.48z" transform="translate(20983.678 -17901.479)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN15-2">
+              <svg width="311.623" height="45.797">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20359.512 17967.246c-120.143-2.449-224.729-5.078-310.85-7.816l1.207-37.98c85.979 2.732 190.418 5.359 310.416 7.8z" transform="translate(20670.361 -17921.449)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN16-2">
+              <svg width="587.186" height="45.967">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19772.326 17975.221h-80.35c-2.662-.027-248.9-2.717-506.836-7.975l.773-37.992c257.752 5.254 503.813 7.941 506.268 7.969h80.145z" transform="translate(20359.512 -17929.254)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN17-2">
+              <svg width="609.563" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19162.764 17975.221h-609.562v-38h609.563z" transform="translate(19772.326 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN18-2">
+              <svg width="584.486" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-18578.277 17975.221h-584.486v-38h584.486z" transform="translate(19162.764 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN19-2">
+              <svg width="582.436" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17995.842 17975.221h-582.436v-38h582.436z" transform="translate(18578.277 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN20-2">
+              <svg width="629.596" height="38">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17366.246 17975.221h-629.6v-38h629.6z" transform="translate(17995.842 -17937.221)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- E: 상행선 신규 노선 -->
+
+            <!-- 상행선 아이콘 -->
+            <span class="ico cctv2" style="left: 964px; top: 565px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 1356px; top: 511px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <div
+              class="fogwrapper red"
+              style="left: 1130px; top: 190px; display: none"
+            >
+              <div class="foglayer_01" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+              <div class="foglayer_02" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+              <div class="foglayer_03" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+            </div>
+            <span class="ico rwis fog red" style="left: 1472px; top: 479px">
+              <img src="images/icon_rwis.svg" alt="" />
+              <i class="num">1</i>
+            </span>
+
+            <span class="ico cctv2 northbound" id="target_ico" style="left: 1860px; top: 376px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 1860px; top: 476px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 2000px; top: 508px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 2230px; top: 439px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 2230px; top: 539px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 2420px; top: 445px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 2420px; top: 545px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 2581px; top: 544px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 2909px; top: 444px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 2909px; top: 544px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 3053px; top: 440px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 3053px; top: 540px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 3169px; top: 537px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 3399px; top: 403px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 3399px; top: 503px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 3678px; top: 385px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 3678px; top: 485px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 3889px; top: 540px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 4516px; top: 563px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2 northbound" style="left: 4895px; top: 570px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 5207px; top: 469px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 5207px; top: 571px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 5520px; top: 571px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2 northbound" style="left: 6295px; top: 570px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 northbound" style="left: 6414px; top: 470px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 6414px; top: 570px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <!-- S: 하행선 신규 노선 -->
+            <div class="svg-gradient-wrap svg-gradient-wrapN1-3">
+              <svg width="779.857" height="230.184">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-24497.656 17345.551a214.247 214.247 0 0 1-101.639-25.572c-3.883-.977-33.881-20.143-59.873-41.455-8.455-6.934-39.939-38.672-47.611-46.922-17.955-16.07-54.627-43.914-77.771-53.771-.391-.211-40.143-21.715-97.07-24.432l-.715-37.992c60.943-1.152 108.518 23.277 116.357 27.395 29.488 12.391 70.8 48.2 85.867 61.535 6.205 6.781 38.285 39.264 45.037 44.8 23.719 19.447 54.09 37.543 54.393 37.725 87.992 46.744 169.273.539 172.688-1.451 32.145-20.049 91.559-68.4 92.154-68.883l1.49-1.1c68.242-45.332 122.5-78.029 202.746-97.029l9.125 37.125c-72.389 17.742-126.092 48.643-190.084 91.053-7.342 5.963-62.779 50.777-95.764 71.344-3.018 1.79-47.805 27.628-109.33 27.63z" transform="translate(24882.336 -17115.367)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN2-3">
+              <svg width="843.025" height="112.209">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-23272 17208.441c-74.826-6.932-141.223-20.488-205.434-33.6-100.855-20.592-205.113-41.895-351.182-40.547-145.521 1.33-218.674 7.578-273.859 21.105l-9.047-36.906c57.412-14.074 133.158-20.832 282.559-22.2 150.055-1.4 256.342 20.328 359.131 41.314 66.121 13.5 128.576 26.252 201.336 32.99z" transform="translate(24111.525 -17096.232)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN3-3">
+              <svg width="375.77" height="67.383">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-23179.664 17213.273c-31.463-.4-61.539-1.98-92.34-4.832l3.5-37.84a1108.498 1108.498 0 0 0 88.932 4.674c111.275-.873 199.26-16.02 276.889-29.385l6.445 37.449c-79.053 13.612-168.662 29.038-283.426 29.934z" transform="translate(23272.004 -17145.891)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN4-3">
+              <svg width="179.006" height="63.861">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22896.232 17183.34-6.449-37.449 9.188-1.584c50.725-8.746 103.174-17.791 161.107-24.32l4.57-.508 4.141 37.773-4.453.5c-56.83 6.4-108.723 15.354-158.906 24.006z" transform="translate(22902.682 -17119.479)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN5-3">
+              <svg width="233.939" height="50.477">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22728.129 17157.748-4.258-37.762 4.57-.508c52.008-5.721 128.875-9.828 228.463-12.207l.906 37.988c-98.506 2.354-174.281 6.389-225.221 11.992z" transform="translate(22732.387 -17107.271)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN6-3">
+              <svg width="161.385" height="40.268">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22498.447 17145.26-.906-37.988c48.014-1.146 102.23-1.912 161.146-2.279l.238 38c-58.695.364-112.687 1.126-160.478 2.267z" transform="translate(22499.354 -17104.992)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN7-3">
+              <svg width="159.266" height="38.254">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22337.971 17142.992-.234-38c49.41-.3 102.994-.336 159.266-.088l-.168 38c-56.135-.248-109.586-.218-158.864.088z" transform="translate(22338.205 -17104.738)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN8-3">
+              <svg width="157.391" height="39.291">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22022.162 17144.2c-51.822-.605-104.629-1.061-156.945-1.291l.168-38c52.41.23 105.307.686 157.223 1.295z" transform="translate(22179.107 -17104.904)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN9-3">
+              <svg width="173.766" height="40.582">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21849.08 17146.781a28082.579 28082.579 0 0 0-173.082-2.586l.445-38c59.35.7 117.764 1.592 173.32 2.59z" transform="translate(22022.162 -17106.199)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN10-3">
+              <svg width="120.586" height="40.361">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21729.314 17149.15c-37.729-.814-77.988-1.619-119.766-2.369l.684-37.992c41.824.75 82.131 1.555 119.9 2.369z" transform="translate(21849.08 -17108.789)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN11-3">
+              <svg width="293.625" height="71.244">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21445.979 17182.4c-19.859-5.586-37.084-11.117-52.283-16-23.436-7.523-42.078-12.676-52.553-12.953a35104.11 35104.11 0 0 0-178.5-4.3l.82-37.992c68.26 1.475 129.088 2.986 178.691 4.307 15.906.424 35.8 5.977 63.158 14.762 14.887 4.777 31.762 10.2 50.955 15.594z" transform="translate(21729.314 -17111.158)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN12-3">
+              <svg width="217.203" height="68.27">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21229.428 17214.09q-12.094-.208-25.6-.7c-65.631-2.4-126.219-12.785-190.949-30.988l10.289-36.582c61.75 17.367 119.51 27.313 182.047 29.594q13.116.48 24.867.68z" transform="translate(21445.979 -17145.82)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN13-3">
+              <svg width="254.223" height="70.014">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21210.041 17214.264c-6.2 0-12.646-.057-19.391-.174l.66-38c82.666 1.471 119.924-6.748 163.051-16.23 23.342-5.133 49.8-10.951 85.605-15.613l4.906 37.684c-34.166 4.447-58.662 9.834-82.35 15.043-41.946 9.226-78.62 17.29-152.481 17.29z" transform="translate(21229.432 -17144.25)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN14-3">
+              <svg width="312.426" height="46.502">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-20975.207 17181.932-4.91-37.68a899.409 899.409 0 0 1 24.166-2.812c35.15-3.623 129.408-5.59 288.158-6.01l.1 38c-155.283.412-250.957 2.365-284.363 5.811a855.048 855.048 0 0 0-23.151 2.691z" transform="translate(20980.117 -17135.43)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN15-3">
+              <svg width="307.885" height="38.746">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20360.115 17174.092c-122.525-.67-223.141-.885-307.576-.662l-.1-38c84.547-.223 185.254-.008 307.885.662z" transform="translate(20667.793 -17135.346)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN16-3">
+              <svg width="588.787" height="41.492">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19867.914 17177.584c-26 0-80.822-.437-168.9-1.16-90.668-.744-205.514-1.687-323.3-2.332l.207-38c117.822.645 232.707 1.588 323.4 2.332 98.525.813 176.348 1.451 183.42 1.051 15.691-1 42.2-1.854 81.02-2.605l.738 37.992c-37.725.732-64.424 1.586-79.359 2.537-1.982.126-7.652.185-17.226.185z" transform="translate(20360.115 -17136.092)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN17-3">
+              <svg width="609.777" height="41.361">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-19771.328 17174.861-.738-37.992c109.564-2.129 314.719-3.262 609.762-3.369l.016 38c-294.806.107-499.712 1.238-609.04 3.361z" transform="translate(19772.066 -17133.5)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN18-3">
+              <svg width="584.48" height="38.797">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-18577.926 17172.289c-220.879-.584-417.5-.855-584.363-.789l-.016-38c166.941-.061 363.564.205 584.48.789z" transform="translate(19162.305 -17133.492)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN19-3">
+              <svg width="583.432" height="40.039">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17994.654 17174.328c-178.533-.756-380.2-1.5-583.271-2.039l.1-38c203.092.537 404.777 1.283 583.33 2.039z" transform="translate(18577.926 -17134.289)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN20-3">
+              <svg width="629.084" height="41.098">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17365.789 17177.426c-26.277-.152-285.687-1.646-628.865-3.1l.16-38c343.209 1.451 602.646 2.945 628.924 3.1z" transform="translate(17994.654 -17136.328)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN1-4">
+              <svg width="787.359" height="229.498">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-24492.961 17345.6c-18.43 0-39.043-1.955-62.863-6.545-3.1-.67-66.613-15.559-115.244-58.332 0 0-20.768-15.9-47.584-44.109l-14.754-14.359c-12.43-11.428-16.041-16.084-29.715-25.713 0 0-47.572-42.43-116.609-43.43-1.1 0-1.049-.02-2.164 0l-.084-37c1.373-.025.893 0 2.248 0 73.324 1 140.041 51.281 140.041 51.281 14.33 10.252 27.414 22.766 48.918 43.389 25.127 26.781 41.7 38.955 42.992 39.814 42.455 37.785 99.041 51.115 99.6 51.236 67.924 13.088 103.164 2.49 145.133-14.037 3.217-1.584 17.834-8.838 21.133-10.477 38.3-23.09 85.6-65.26 86.07-65.686l1.018-.91 1.135-.754c68.41-45.445 115.092-71.828 180.387-89.91a546.694 546.694 0 0 1 9.166-2.457l9.52 36.789a501.073 501.073 0 0 0-8.541 2.289c-60.02 16.619-103.936 41.434-168.395 84.205-7.6 6.725-52.785 46.242-91.461 69.41-.477.277-23.691 11.9-25.373 12.568-31.457 12.419-62.238 22.738-104.574 22.738z" transform="translate(24881.979 -17116.105)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN2-4">
+              <svg width="833.662" height="112.057">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-23273.586 17208.293c-74.148-6.953-140.086-20.42-203.854-33.441-100.844-20.594-205.115-41.9-351.18-40.555-134.777 1.232-209.479 6.9-266.437 20.207l-8.645-37c59.9-14 136.932-19.941 274.734-21.2q6.8-.062 13.488-.061c143.012 0 245.971 21.027 345.643 41.383 65.668 13.412 127.693 26.078 199.8 32.84z" transform="translate(24103.701 -17096.236)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN3-4">
+              <svg width="389.564" height="69.121">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-23179.664 17213.273c-31.924-.408-62.518-2.037-93.922-4.98l3.547-37.834a1113.201 1113.201 0 0 0 90.471 4.816c119.941-.939 213.006-18.006 289.09-31.123l6.457 37.449c-77.596 13.379-172.579 30.712-295.643 31.672z" transform="translate(23273.586 -17144.152)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN4-4">
+              <svg width="167.541" height="62.154">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22883.99 17181.633-6.457-37.449c17.764-3.062 35.475-5.637 52.52-9.043 34.324-5.988 69.615-11.207 110.1-15.662l2.846 18.8 2.072 18.887-.777.084c-38.814 4.271-72.92 9.275-106.795 15.15-17.287 3.459-35.249 6.084-53.509 9.233z" transform="translate(22890.447 -17119.479)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN5-4">
+              <svg width="230.035" height="49.914">
+                <defs></defs>
+                <g>
+                  <path
+                  d="m-22722.916 17157.168-4.893-37.689c52.926-5.783 129.758-9.867 229.133-12.225l.9 37.988c-98.3 2.334-174.048 6.346-225.14 11.926z" transform="translate(22727.809 -17107.254)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN6-4">
+              <svg width="161.625" height="40.254">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22497.773,17145.242l-.9-37.988c48.107-1.143,102.406-1.9,161.391-2.266l.234,38C-22395.814,17143.348-22449.889,17144.107-22497.773,17145.242Z" transform="translate(22498.676 -17104.988)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN7-4">
+              <svg width="157.688" height="38.248">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22337.051,17142.988l-.234-38c48.807-.3,101.857-.33,157.688-.086l-.164,38C-22235.465,17142.658-22288.385,17142.688-22337.051,17142.988Z" transform="translate(22337.285 -17104.74)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN8-4">
+              <svg width="158.047" height="39.293">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-22022.16,17144.2c-52.48-.613-105.3-1.066-157.6-1.293l.164-38c52.4.227,105.309.68,157.883,1.3Z" transform="translate(22179.762 -17104.902)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN9-4">
+              <svg width="176.002" height="40.621">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21846.842,17146.82c-56.158-1.01-115.3-1.922-175.318-2.625l.445-38c60.1.7,119.324,1.615,175.557,2.629Z" transform="translate(22022.16 -17106.199)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN10-4">
+              <svg width="119.854" height="40.354">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21727.809,17149.182c-37.686-.814-77.613-1.615-119.033-2.361l.684-37.992c41.467.746,81.441,1.547,119.17,2.361Z" transform="translate(21846.842 -17108.828)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN11-4">
+              <svg width="284.154" height="70.463">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21454.229,17181.652c-16.707-4.844-31.545-9.605-44.637-13.809-23.418-7.52-40.2-12.859-51.949-14.391-49.254-1.312-109.592-2.814-176.994-4.271l.82-37.992c67.477,1.461,127.877,2.963,177.186,4.275,16.158,1.6,35.217,7.422,62.555,16.2,12.842,4.125,27.344,8.781,43.594,13.492Z" transform="translate(21727.809 -17111.189)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN12-4">
+              <svg width="225.326" height="68.938">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21229.471,17214.09c-8.02-.139-16.557-.371-25.559-.7-89.215-3.258-156.516-19.395-199.111-31.742l10.578-36.5c40.662,11.785,104.906,27.16,189.92,30.262,8.744.32,17.039.545,24.828.68Z" transform="translate(21454.141 -17145.152)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN13-4">
+              <svg width="263.102" height="71.168">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-21210.068,17214.264c-6.2,0-12.656-.057-19.4-.174l.66-38c82.709,1.471,119.965-6.748,163.08-16.234,25.391-5.586,54.168-11.916,94.867-16.764l4.494,37.734c-38.848,4.627-65.461,10.48-91.2,16.143C-21099.5,17206.2-21136.168,17214.264-21210.068,17214.264Z" transform="translate(21229.473 -17143.096)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN14-4">
+              <svg width="301.49" height="45.396">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20966.375,17180.83l-4.488-37.734c4.959-.59,9.844-1.133,14.912-1.656,34.936-3.6,128.643-5.566,286.473-6.006l.105,38c-154.375.43-249.484,2.383-282.682,5.807C-20956.926,17179.74-20961.615,17180.264-20966.375,17180.83Z" transform="translate(20970.863 -17135.434)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN15-4">
+              <svg width="310.371" height="38.752">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-20359.314,17174.092c-123.646-.68-225.064-.9-310.059-.658l-.105-38c85.094-.24,186.623-.021,310.371.658Z" transform="translate(20669.479 -17135.34)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN16-4">
+              <svg width="589.66" height="41.492">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19867.9,17177.584c-26.025,0-80.934-.437-169.178-1.164-90.393-.742-204.8-1.682-322.238-2.328l.209-38c117.479.646,231.92,1.586,322.342,2.33,98.674.811,176.611,1.455,183.68,1.053,15.852-1.01,42.908-1.875,82.7-2.639l.73,37.992c-38.678.744-65.939,1.607-81.031,2.57C-19852.668,17177.525-19858.334,17177.584-19867.9,17177.584Z" transform="translate(20359.316 -17136.092)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN17-4">
+              <svg width="609.217" height="41.33">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-19769.656,17174.828l-.73-37.992c109.785-2.109,314.752-3.23,609.2-3.338l.014,38C-19455.385,17171.6-19660.109,17172.725-19769.656,17174.828Z" transform="translate(19770.387 -17133.498)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN18-4">
+              <svg width="582.854" height="38.797">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-18578.432,17172.285c-220.2-.584-416.273-.846-582.736-.787l-.016-38c166.52-.066,362.619.2,582.854.787Z" transform="translate(19161.184 -17133.488)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN19-4">
+              <svg width="584.535" height="40.043">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17994.057,17174.328c-179.5-.76-381.242-1.506-584.375-2.043l.1-38c203.152.537,404.916,1.283,584.434,2.043Z" transform="translate(18578.432 -17134.285)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="svg-gradient-wrap svg-gradient-wrapN20-4">
+              <svg width="628.488" height="41.098">
+                <defs></defs>
+                <g>
+                  <path
+                  d="M-17365.791 17177.426c-26.281-.154-285.834-1.648-628.266-3.1l.16-38c342.467 1.449 602.043 2.943 628.328 3.1z" transform="translate(17994.057 -17136.328)"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- E: 하행선 신규 노선 -->
+
+            <div
+              class="fogwrapper orange"
+              style="left: 2150px; top: 420px; display: none"
+            >
+              <div class="foglayer_01" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+              <div class="foglayer_02" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+              <div class="foglayer_03" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+            </div>
+            <span
+              class="ico rwis fog orange"
+              style="left: 2735px; top: 543px; z-index: 41"
+            >
+              <img src="images/icon_rwis.svg" alt="" />
+              <i class="num">2</i>
+            </span>
+
+            <!-- 하행선 아이콘 -->
+            <span class="ico vds" style="left: 696px; top: 877px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 1181px; top: 852px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 1558px; top: 916px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 1558px; top: 1016px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 1990px; top: 885px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 1990px; top: 985px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 2143px; top: 864px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 2557px; top: 851px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 2557px; top: 951px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 2707px; top: 852px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 2707px; top: 952px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 2813px; top: 854px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 3217px; top: 863px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 3217px; top: 963px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 3372px; top: 886px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 3372px; top: 986px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 3497px; top: 914px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 3740px; top: 912px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 3740px; top: 1012px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2 southbound" style="left: 3875px; top: 887px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <div
+              class="fogwrapper yellow"
+              style="left: 3110px; top: 691px; display: none"
+            >
+              <div class="foglayer_01" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+              <div class="foglayer_02" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+              <div class="foglayer_03" class="fog">
+                <div class="image01"></div>
+                <div class="image02"></div>
+              </div>
+            </div>
+
+            <span class="ico rwis fog yellow" style="left: 3979px; top: 878px">
+              <img src="images/icon_rwis.svg" alt="" />
+              <i class="num">3</i>
+            </span>
+
+            <span class="ico cctv2" style="left: 4242px; top: 886px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 4242px; top: 986px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 4242px; top: 1086px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico tollgate close" style="left: 4999px; top: 777px; z-index: 81;">
+              <span class="toll"
+                ><img src="images/img_toll_02.svg" alt=""
+              /></span>
+              <img src="images/icon_tollgate_close.svg" alt="" />
+              <span class="txt">Zanzira</span>
+            </span>
+
+            <span class="ico cctv2" style="left: 5673px; top: 880px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2" style="left: 5854px; top: 880px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 5854px; top: 980px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2" style="left: 6885px; top: 883px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <span class="ico cctv2" style="left: 7078px; top: 885px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico vds" style="left: 7078px; top: 985px"
+              ><img src="images/icon_vds.svg" alt=""
+            /></span>
+
+            <!--
+            <span class="ico cctv1 tip" style="left: 5190px; top: 897px"
+              ><img src="images/icon_cctv.svg" alt=""
+            /></span>
+            <span class="ico cctv1 tip" style="left: 5420px; top: 897px"
+              ><img src="images/icon_cctv.svg" alt=""
+            /></span>
+            -->
+
+            <!-- 하단 레일 -->
+            <div class="railroad rail2">
+              <img src="images/img_railroad.svg" alt="" />
+            </div>
+            <span class="ico cctv2" style="left: 1940px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2078px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2217px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2355px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2493px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2631px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2770px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 2908px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 3244px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+            <span class="ico cctv2" style="left: 3364px; top: 1163px"
+              ><img src="images/icon_cctv02.svg" alt=""
+            /></span>
+
+            <!-- 하단 LCS -->
+            <span class="lcs red" style="left: 3660px; top: 1147px"
+              ><img src="images/lcs/icon_lcs_noway.svg" alt=""
+            /></span>
+            <span class="lcs green" style="left: 3815px; top: 1147px"
+              ><img src="images/lcs/icon_lcs_pass.svg" alt=""
+            /></span>
+            <div class="lcs-box" style="left: 3660px; top: 1302px"></div>
+
+            <!-- 돌발 아이콘 -->
+            <span class="ico emer" style="left: 1801px; top: 400px"
+              ><img src="images/icon_emer.png" alt=""
+            /></span>
+            <span class="ico emer" style="left: 1731px; top: 955px"
+              ><img src="images/icon_emer.png" alt=""
+            /></span>
+
+            <div class="s-popup northbound" style="left: 4946px; top: 43px; z-index: 2;">
+              <img
+                src="https://via.placeholder.com/716x458/485b5b/95ebeb?text=hoziron+img"
+                alt=""
+              />
+              <a href="#" class="btn-close"
+                ><img src="images/icon_popup_close.svg" alt="팝업 닫기"
+              /></a>
+            </div>
+
+            <div class="s-popup southbound" style="left: 4936px; bottom: 196px; z-index: 2;">
+              <img
+                src="https://via.placeholder.com/716x458/485b5b/95ebeb?text=hoziron+img"
+                alt=""
+              />
+              <a href="#" class="btn-close"
+                ><img src="images/icon_popup_close.svg" alt="팝업 닫기"
+              /></a>
+            </div>
+
+            <!-- 하단 영역 -->
+            <div class="items-area">
+              <div class="items1">
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>CCTV</dt>
+                      <dd><em>1</em>/50</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>VMS</dt>
+                      <dd><em>1</em>/2</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>VDS</dt>
+                      <dd><em>10</em>/20</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>LCS</dt>
+                      <dd><em>0</em>/4</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>RWIS</dt>
+                      <dd><em>0</em>/20</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <div class="items2">
+                <ul>
+                  <li>
+                    <dl>
+                      <dt class="temperature">
+                        <span class="ico rwis sm">
+                          <img src="images/icon_rwis.svg" alt="" />
+                          <i class="num">1</i>
+                        </span>
+                      </dt>
+                      <dd>32˚C, 26˚C</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="wind"></dt>
+                      <dd>0.5m/s, NW</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <div class="items2">
+                <ul>
+                  <li>
+                    <dl>
+                      <dt class="temperature">
+                        <span class="ico rwis sm">
+                          <img src="images/icon_rwis.svg" alt="" />
+                          <i class="num">2</i>
+                        </span>
+                      </dt>
+                      <dd>32˚C, 26˚C</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="wind"></dt>
+                      <dd>0.5m/s, NW</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <div class="items2">
+                <ul>
+                  <li>
+                    <dl>
+                      <dt class="temperature">
+                        <span class="ico rwis sm">
+                          <img src="images/icon_rwis.svg" alt="" />
+                          <i class="num">3</i>
+                        </span>
+                      </dt>
+                      <dd>32˚C, 26˚C</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt class="wind"></dt>
+                      <dd>0.5m/s, NW</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 우측 챠트 영역 -->
+            <div class="chart-area">
+              <div class="chart-cont">
+                <div class="chart chart1">
+                  <span class="c-edge"></span>
+                  <p class="c-tit">Traffic by car type</p>
+                  <div><!-- 차트 영역 --></div>
+                </div>
+                <div class="chart-wrap">
+                  <div class="chart chart2">
+                    <span class="c-edge"></span>
+                    <p class="c-tit">Traffic by day of the week</p>
+                    <div><!-- 차트 영역 --></div>
+                  </div>
+                  <div class="chart chart3">
+                    <span class="c-edge"></span>
+                    <p class="c-tit">Unexpected</p>
+                    <div><!-- 차트 영역 --></div>
+                  </div>
+                </div>
+                <div class="chart chart4">
+                  <span class="c-edge"></span>
+                  <p class="c-tit">Visibility distance / Precipitation</p>
+                  <div><!-- 차트 영역 --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .road-wrap -->
+      </div>
+      <!-- #dashboard -->
+      <div class="popup-dimm"></div>
+      <div class="modal-wrap">
+        <div class="modal-inner">
+          <span class="time">08 / 10 / 2022 12:00:00</span>
+          <span class="accident"
+            ><strong>[Accident]</strong> Direction of Mawa, 2km spot, Traffic
+            accident</span
+          >
+          <div class="btns-wrap">
+            <a href="#" class="btn1">Ignore</a>
+            <a href="#" class="btn2">Response</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup-wrap">
+        <div class="popup-inner">
+          <div class="top-info">
+            <span class="time">08 / 10 / 2022 12:00:00</span>
+            <span class="con"
+              ><strong>[3090123200]</strong> Judgment 61Score</span
+            >
+          </div>
+          <div class="content-wrap">
+            <div class="white-box"></div>
+            <div class="black-box"></div>
+          </div>
+          <div class="tail-wrap">
+            <span class="chk-base">
+              <input type="checkbox" id="chk-alarm" />
+              <label for="chk-alarm">Turn off the alarm for 30 minutes</label>
+            </span>
+            <div class="btns-wrap">
+              <a href="#" class="btn1">Ignore</a>
+              <a href="#" class="btn2">Response</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- INFO -->
+      <div class="info-area" style="top: 50px; right: 50px">
+        <span class="edge lt"></span>
+        <span class="edge rt"></span>
+        <span class="edge lb"></span>
+        <span class="edge rb"></span>
+        <div class="info-inner">
+          <img
+            src="https://via.placeholder.com/1037x571/485b5b/95ebeb?text=hoziron+img"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="bottom-wrap">
+        <div class="bottom-item">
+          <div class="slide-item">
+            <a href="#" class="btn-prev disabled">이전</a>
+            <a href="#" class="btn-next">다음</a>
+          </div>
+          <a href="#" class="btn-close"></a>
+        </div>
+        <div class="bottom-inner">
+          <div class="info-box chat">
+            <span class="edge lt"></span>
+            <span class="edge rt"></span>
+            <span class="edge lb"></span>
+            <span class="edge rb"></span>
+            <div class="info-inner">
+              <div class="info-scroll">
+                <ul class="chat-list">
+                  <li>
+                    <div class="chat-box">
+                      <span class="author"
+                        >Idham (General Services Division)</span
+                      >
+                      <span class="con"
+                        >Accident site recovery in progress</span
+                      >
+                    </div>
+                    <span class="date">16-11-2022 12:03</span>
+                  </li>
+                  <li>
+                    <div class="chat-box">
+                      <span class="author"
+                        >Taufik (General Services Division)</span
+                      >
+                      <span class="con">Fast Recovery Winds</span>
+                    </div>
+                    <span class="date">16-11-2022 12:03</span>
+                  </li>
+                  <li>
+                    <div class="chat-box">
+                      <span class="author"
+                        >Aizat (General Services Division)</span
+                      >
+                      <span class="con">Secondary control required</span>
+                    </div>
+                    <span class="date">16-11-2022 12:03</span>
+                  </li>
+                  <li>
+                    <div class="chat-box">
+                      <span class="author"
+                        >Aizat (General Services Division)</span
+                      >
+                      <span class="con"
+                        >Secondary control required Accident site recovery in
+                        progress Fast Recovery Winds</span
+                      >
+                    </div>
+                    <span class="date">16-11-2022 12:03</span>
+                  </li>
+                  <li>
+                    <div class="chat-box">
+                      <span class="author"
+                        >Taufik (General Services Division)</span
+                      >
+                      <span class="con">Fast Recovery Winds</span>
+                    </div>
+                    <span class="date">16-11-2022 12:03</span>
+                  </li>
+                  <li>
+                    <div class="chat-box">
+                      <span class="author"
+                        >Aizat (General Services Division)</span
+                      >
+                      <span class="con">Secondary control required</span>
+                    </div>
+                    <span class="date">16-11-2022 12:03</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="info-box">
+            <span class="edge lt"></span>
+            <span class="edge rt"></span>
+            <span class="edge lb"></span>
+            <span class="edge rb"></span>
+            <div class="info-inner">
+              <img src="images/sample_02.png" alt="" />
+            </div>
+          </div>
+          <div class="info-box">
+            <span class="edge lt"></span>
+            <span class="edge rt"></span>
+            <span class="edge lb"></span>
+            <span class="edge rb"></span>
+            <div class="info-inner">
+              <img src="images/sample_01.png" alt="" />
+            </div>
+          </div>
+          <div class="info-box status">
+            <span class="edge lt"></span>
+            <span class="edge rt"></span>
+            <span class="edge lb"></span>
+            <span class="edge rb"></span>
+            <div class="info-inner">
+              <p class="r-tit">Response Status</p>
+              <ul class="r-step">
+                <li>Register</li>
+                <li class="current">Response</li>
+                <li>Close</li>
+              </ul>
+              <p class="r-tit">Damage Of Human Life</p>
+              <ul class="r-list">
+                <li>
+                  <span class="num"></span>
+                  <span class="txt">Death</span>
+                </li>
+                <li>
+                  <span class="num"></span>
+                  <span class="txt">Serious</span>
+                </li>
+                <li>
+                  <span class="num"></span>
+                  <span class="txt">Injury</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #wrapper -->
+    <style>
+      .svg-gradient-wrap {
+        position: absolute;
+      }
+      .svg-gradient-wrap svg {
+        position: absolute;
+        transition: all 2s ease-in-out;
+      }
+
+      /* S: 신규 노선 */
+      .svg-gradient-wrapN1-1 { left: 1.7px; top: 512px; }
+      .svg-gradient-wrapN2-1 { left: 773.1px; top: 572.7px; }
+      .svg-gradient-wrapN3-1 { left: 1604.7px; top: 566.1px; }
+      .svg-gradient-wrapN4-1 { left: 1983.9px; top: 603.3px; }
+      .svg-gradient-wrapN5-1 { left: 2155.2px; top: 636.7px; }
+      .svg-gradient-wrapN6-1 { left: 2384.1px; top: 648.6px; }
+      .svg-gradient-wrapN7-1 { left: 2545.4px; top: 650.6px; }
+      .svg-gradient-wrapN8-1 { left: 2702.5px; top: 649.2px; }
+      .svg-gradient-wrapN9-1 { left: 2860.4px; top: 646.4px; }
+      .svg-gradient-wrapN10-1 { left: 3034.5px; top: 643.9px; }
+      .svg-gradient-wrapN11-1 { left: 3154.8px; top: 613.4px; }
+      .svg-gradient-wrapN12-1 { left: 3431.4px; top: 582px; }
+      .svg-gradient-wrapN13-1 { left: 3666.8px; top: 584px; }
+      .svg-gradient-wrapN14-1 { left: 3907.6px; top: 642.7px; }
+      .svg-gradient-wrapN15-1 { left: 4213.6px; top: 661.5px; }
+      .svg-gradient-wrapN16-1 { left: 4521.8px; top: 669.2px; }
+      .svg-gradient-wrapN17-1 { left: 5110.9px; top: 677.2px; }
+      .svg-gradient-wrapN18-1 { left: 5719.8px; top: 677.2px; }
+      .svg-gradient-wrapN19-1 { left: 6304.1px; top: 677.2px; }
+      .svg-gradient-wrapN20-1 { left: 6884.7px; top: 677.2px; }
+
+      .svg-gradient-wrapN1-2 { left: 0.2px; top: 554.3px; }
+      .svg-gradient-wrapN2-2 { left: 769.5px; top: 614.3px; }
+      .svg-gradient-wrapN3-2 { left: 1609px; top: 608.1px; }
+      .svg-gradient-wrapN4-2 { left: 1977.5px; top: 643.6px; }
+      .svg-gradient-wrapN5-2 { left: 2149.8px; top: 678.1px; }
+      .svg-gradient-wrapN6-2 { left: 2382.6px; top: 690.6px; }
+      .svg-gradient-wrapN7-2 { left: 2545.8px; top: 692.6px; }
+      .svg-gradient-wrapN8-2 { left: 2701.7px; top: 691.2px; }
+      .svg-gradient-wrapN9-2 { left: 2859.9px; top: 688.4px; }
+      .svg-gradient-wrapN10-2 { left: 3034.5px; top: 685.9px; }
+      .svg-gradient-wrapN11-2 { left: 3155.3px; top: 655.3px; }
+      .svg-gradient-wrapN12-2 { left: 3437.1px; top: 624px; }
+      .svg-gradient-wrapN13-2 { left: 3661.8px; top: 625.6px; }
+      .svg-gradient-wrapN14-2 { left: 3899.3px; top: 683.5px; }
+      .svg-gradient-wrapN15-2 { left: 4212.6px; top: 703.5px; }
+      .svg-gradient-wrapN16-2 { left: 4523.5px; top: 711.3px; }
+      .svg-gradient-wrapN17-2 { left: 5110.7px; top: 719.2px; }
+      .svg-gradient-wrapN18-2 { left: 5720.2px; top: 719.2px; }
+      .svg-gradient-wrapN19-2 { left: 6304.7px; top: 719.2px; }
+      .svg-gradient-wrapN20-2 { left: 6884.1px; top: 719.2px; }
+
+      .svg-gradient-wrapN1-3 { left: 0.6px; top: 770px; }
+      .svg-gradient-wrapN2-3 { left: 771.5px; top: 750.8px; }
+      .svg-gradient-wrapN3-3 { left: 1611px; top: 800.5px; }
+      .svg-gradient-wrapN4-3 { left: 1980.3px; top: 774.1px; }
+      .svg-gradient-wrapN5-3 { left: 2150.6px; top: 761.9px; }
+      .svg-gradient-wrapN6-3 { left: 2383.6px; top: 759.6px; }
+      .svg-gradient-wrapN7-3 { left: 2544.8px; top: 759.3px; }
+      .svg-gradient-wrapN8-3 { left: 2703.9px; top: 759.5px; }
+      .svg-gradient-wrapN9-3 { left: 2860.8px; top: 760.8px; }
+      .svg-gradient-wrapN10-3 { left: 3033.9px; top: 763.4px; }
+      .svg-gradient-wrapN11-3 { left: 3153.7px; top: 765.8px; }
+      .svg-gradient-wrapN12-3 { left: 3437px; top: 800.4px; }
+      .svg-gradient-wrapN13-3 { left: 3653.5px; top: 798.8px; }
+      .svg-gradient-wrapN14-3 { left: 3902.9px; top: 790px; }
+      .svg-gradient-wrapN15-3 { left: 4215.2px; top: 789.9px; }
+      .svg-gradient-wrapN16-3 { left: 4522.9px; top: 790.7px; }
+      .svg-gradient-wrapN17-3 { left: 5110.9px; top: 788.1px; }
+      .svg-gradient-wrapN18-3 { left: 5720.7px; top: 788.1px; }
+      .svg-gradient-wrapN19-3 { left: 6305.1px; top: 788.9px; }
+      .svg-gradient-wrapN20-3 { left: 6885.3px; top: 790.9px; }
+
+      .svg-gradient-wrapN1-4 { left: 1px; top: 812.7px; }
+      .svg-gradient-wrapN2-4 { left: 779.3px; top: 792.8px; }
+      .svg-gradient-wrapN3-4 { left: 1609.4px; top: 840.8px; }
+      .svg-gradient-wrapN4-4 { left: 1992.5px; top: 816.1px; }
+      .svg-gradient-wrapN5-4 { left: 2155.2px; top: 803.9px; }
+      .svg-gradient-wrapN6-4 { left: 2384.3px; top: 801.6px; }
+      .svg-gradient-wrapN7-4 { left: 2545.7px; top: 801.3px; }
+      .svg-gradient-wrapN8-4 { left: 2703.2px; top: 801.5px; }
+      .svg-gradient-wrapN9-4 { left: 2860.8px; top: 802.8px; }
+      .svg-gradient-wrapN10-4 { left: 3036.1px; top: 805.4px; }
+      .svg-gradient-wrapN11-4 { left: 3155.2px; top: 807.8px; }
+      .svg-gradient-wrapN12-4 { left: 3428.8px; top: 841.8px; }
+      .svg-gradient-wrapN13-4 { left: 3653.5px; top: 839.7px; }
+      .svg-gradient-wrapN14-4 { left: 3912.1px; top: 832px; }
+      .svg-gradient-wrapN15-4 { left: 4213.5px; top: 831.9px; }
+      .svg-gradient-wrapN16-4 { left: 4523.7px; top: 832.7px; }
+      .svg-gradient-wrapN17-4 { left: 5112.6px; top: 830.1px; }
+      .svg-gradient-wrapN18-4 { left: 5721.8px; top: 830.1px; }
+      .svg-gradient-wrapN19-4 { left: 6304.5px; top: 830.9px; }
+      .svg-gradient-wrapN20-4 { left: 6885.9px; top: 832.9px; }
+      /* E: 신규 노선 */
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery.animateNumber.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+      // S: 신규 노선
+      // runMockSvg[0] - 셀렉터
+      // runMockSvg[1] - 빨강, 노랑, 초록, 정보없음의 각각 속도
+      // runMockSvg[2] 0 - 빨강, 1 - 노랑, 2 - 초록, 3 - 정보 없음
+      runMockSvg(".svg-gradient-wrapN1-1", [6000, 4000, 2000, 0], 0); // 빨강 6초, 노랑 4초, 초록 2초 (빨강)
+      runMockSvg(".svg-gradient-wrapN2-1", [8000, 6000, 4000, 2000], 2); // 빨강 8초, 노랑 6초, 초록 4초 (초록)
+      runMockSvg(".svg-gradient-wrapN3-1", [3000, 5000, 2000, 0], 1); // 빨강 3초, 노랑 5초, 초록 2초 (노랑)
+      runMockSvg(".svg-gradient-wrapN4-1", [3000, 5000, 2000, 0], 0); // 빨강 3초, 노랑 5초, 초록 2초 (빨강)
+      runMockSvg(".svg-gradient-wrapN5-1", [3000, 5000, 2000, 0], 0); // 빨강 3초, 노랑 5초, 초록 2초 (빨강)
+      runMockSvg(".svg-gradient-wrapN6-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN7-1", [3000, 5000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN8-1", [3000, 5000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN9-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN10-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN11-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN12-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN13-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN14-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN15-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN16-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN17-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN18-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN19-1", [3000, 5000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN20-1", [3000, 5000, 2000, 0], 0);
+
+      runMockSvg(".svg-gradient-wrapN1-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN2-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN3-2", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN4-2", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN5-2", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN6-2", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN7-2", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN8-2", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN9-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN10-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN11-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN12-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN13-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN14-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN15-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN16-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN17-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN18-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN19-2", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN20-2", [6000, 4000, 2000, 0], 0);
+
+      runMockSvg(".svg-gradient-wrapN1-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN2-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN3-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN4-3", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN5-3", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN6-3", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN7-3", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN8-3", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN9-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN10-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN11-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN12-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN13-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN14-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN15-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN16-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN17-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN18-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN19-3", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN20-3", [6000, 4000, 2000, 0], 1);
+
+      runMockSvg(".svg-gradient-wrapN1-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN2-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN3-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN4-4", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN5-4", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN6-4", [6000, 4000, 2000, 0], 0);
+      runMockSvg(".svg-gradient-wrapN7-4", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN8-4", [6000, 4000, 2000, 0], 2);
+      runMockSvg(".svg-gradient-wrapN9-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN10-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN11-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN12-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN13-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN14-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN15-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN16-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN17-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN18-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN19-4", [6000, 4000, 2000, 0], 1);
+      runMockSvg(".svg-gradient-wrapN20-4", [6000, 4000, 2000, 0], 1);
+      // E: 신규 노선
+
+      $("#dashboard .graph").on("click", function () {
+        if (!$(this).hasClass("on")) {
+          $(this).addClass("on");
+          $(".chart-area").addClass("on");
+        } else {
+          $(this).removeClass("on");
+          $(".chart-area").removeClass("on");
+        }
+      });
+
+      $(".modal-wrap .btn1, .modal-wrap .btn2").on("click", function (e) {
+        e.preventDefault();
+        $(".modal-wrap, .popup-dimm, .popup-wrap").fadeOut(200);
+      });
+      $(".popup-wrap .btn1, .popup-wrap .btn2").on("click", function (e) {
+        e.preventDefault();
+        $(".modal-wrap, .popup-dimm, .popup-wrap").fadeOut(200);
+      });
+
+      $(".info-scroll").mCustomScrollbar({
+        theme: "minimal-dark",
+      });
+      $(".bottom-wrap .btn-close").on("click", function (e) {
+        e.preventDefault();
+        $(".bottom-wrap, .popup-dimm").fadeOut(200);
+        $(".ico.tip.blur").removeClass("blur");
+        $(".lcs.red:eq(0), .lcs.green:eq(0), .lcs-box:eq(0)").css(
+          "z-index",
+          ""
+        );
+      });
+      $(document).on("click", ".ico.tip", function () {
+        $(".ico.tip.blur").removeClass("blur");
+        $(this).addClass("blur");
+        $(".bottom-wrap, .popup-dimm").fadeIn(200);
+        $(".lcs.red:eq(0), .lcs.green:eq(0), .lcs-box:eq(0)").css(
+          "z-index",
+          101
+        );
+      });
+      $(".ico.cctv2.northbound").on("click", function () {
+        $(".s-popup.northbound").fadeIn(200);
+      });
+      $(".ico.cctv2.southbound").on("click", function () {
+        $(".s-popup.southbound").fadeIn(200);
+      });
+      $(".s-popup .btn-close").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".s-popup").hide();
+      });
+
+      setTimeout(function () {
+        $(".ico.vms").eq(0).addClass("tip");
+      }, 3000);
+      setTimeout(function () {
+        $(".ico.vds").eq(9).addClass("tip");
+      }, 4000);
+      setTimeout(function () {
+        $(".ico.cctv2").eq(11).addClass("tip");
+      }, 5000);
+      setTimeout(function () {
+        $(".ico.vms").eq(1).addClass("tip");
+      }, 6000);
+
+      var query = $.urlParam("sample");
+      if (query === "2" || query === "chart") {
+        for (let i = 0; i < 5; i++) {
+          setTimeout(function () {
+            $(".items-area > div.items1 ul > li").eq(i).addClass("red");
+          }, i * 1000);
+          $(".items-area > div.items2:eq(0) ul > li").addClass("red");
+          $(".items-area > div.items2:eq(1) ul > li").addClass("orange");
+          $(".items-area > div.items2:eq(2) ul > li").addClass("yellow");
+        }
+        if (query === "chart") {
+          setTimeout(function () {
+            $("#dashboard .graph").click();
+          }, 250);
+        }
+      }
+      if (query === "fog") {
+        setTimeout(function () {
+          $(".items-area > div.items2").eq(2).find("li").addClass("fog");
+          $(".fogwrapper").show();
+        }, 250);
+      } else if (query === "accident") {
+        $(".popup-dimm, .modal-wrap").show();
+      } else if (query === "popup") {
+        $(".popup-dimm, .modal-wrap").show();
+        $(".popup-dimm, .popup-wrap").show();
+      } else if (query === "info") {
+        $(".popup-dimm, .info-area").show();
+        
+        setTimeout(function () {
+          $('#target_ico').addClass('tip').click();
+
+          function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          }
+
+          $(".info-scroll").mCustomScrollbar("scrollTo", $('.chat-list').outerHeight());
+
+          var numArr = [3, 6, 9];
+          $('.info-box .r-list li').each(function(i){
+            console.log(i)
+            $(this).find('.num').animateNumber({
+              number: numArr[i],
+              numberStep: function(now, tween) {
+                $(tween.elem).text(numberWithCommas(Math.floor(now)));
+              }  
+            }, (i+1) * 500);
+          });
+          // $('.info-box .r-list li:eq(0) .num').animateNumber({
+          //   number: 3,
+          //   numberStep: function(now, tween) {
+          //     $(tween.elem).text(numberWithCommas(Math.floor(now)));
+          //   }
+          // }, 500);  
+        }, 250);
+        $(".lcs.red:eq(0), .lcs.green:eq(0), .lcs-box:eq(0)").css("z-index", 101);
+      }
+
+      setTimeout(function () {
+        $(".ico.cctv2.northbound").click();
+        $(".ico.cctv2.southbound").click();
+      }, 250);
+    </script>
+  </body>
+</html>

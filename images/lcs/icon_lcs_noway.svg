@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134.999" height="135" viewBox="0 0 134.999 135">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,0,0,0);
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <g id="icon_lcs_noway" transform="translate(-644 -3310)">
+    <path id="패스_716" data-name="패스 716" class="cls-1" d="M0,0H135V135H0Z" transform="translate(644 3310)"/>
+    <path id="합치기_43" data-name="합치기 43" class="cls-2" d="M30,30,0,60,30,30,0,0,30,30,60,0,30,30,60,60Z" transform="translate(681.5 3347.5)"/>
+  </g>
+</svg>

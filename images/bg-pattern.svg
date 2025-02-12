@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="168.001" viewBox="0 0 168 168.001">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.4;
+      }
+
+      .cls-2 {
+        fill: #103e62;
+      }
+
+      .cls-3 {
+        fill: #094c85;
+      }
+    </style>
+  </defs>
+  <g id="bg_pattern" transform="translate(-2822 -2541.999)">
+    <rect id="bg" width="168" height="168" transform="translate(2822 2542)"/>
+    <g id="bg_pattern-2" data-name="bg_pattern" class="cls-1" transform="translate(2822 2542)">
+      <g id="그룹_1207" data-name="그룹 1207" transform="translate(0 0)">
+        <rect id="사각형_303" data-name="사각형 303" class="cls-2" width="168" height="1" transform="translate(19 168) rotate(-90)"/>
+        <rect id="사각형_304" data-name="사각형 304" class="cls-2" width="168" height="1" transform="translate(35 168) rotate(-90)"/>
+        <rect id="사각형_305" data-name="사각형 305" class="cls-2" width="168" height="1" transform="translate(51 168) rotate(-90)"/>
+        <rect id="사각형_306" data-name="사각형 306" class="cls-2" width="168" height="1" transform="translate(67 168) rotate(-90)"/>
+        <rect id="사각형_307" data-name="사각형 307" class="cls-2" width="168" height="2" transform="translate(82.999 168) rotate(-90)"/>
+        <rect id="사각형_308" data-name="사각형 308" class="cls-2" width="168" height="1" transform="translate(101.001 168) rotate(-90)"/>
+        <rect id="사각형_309" data-name="사각형 309" class="cls-2" width="168" height="1" transform="translate(117 168) rotate(-90)"/>
+        <rect id="사각형_310" data-name="사각형 310" class="cls-2" width="168" height="1" transform="translate(133 168) rotate(-90)"/>
+        <rect id="사각형_311" data-name="사각형 311" class="cls-2" width="168" height="1" transform="translate(149 168) rotate(-90)"/>
+        <rect id="사각형_908" data-name="사각형 908" class="cls-2" width="168" height="3" transform="translate(0 168) rotate(-90)"/>
+        <rect id="사각형_599" data-name="사각형 599" class="cls-2" width="1" height="168" transform="translate(0 19) rotate(-90)"/>
+        <rect id="사각형_600" data-name="사각형 600" class="cls-2" width="1" height="168" transform="translate(0 35.001) rotate(-90)"/>
+        <rect id="사각형_601" data-name="사각형 601" class="cls-2" width="1" height="168" transform="translate(0 52) rotate(-90)"/>
+        <rect id="사각형_602" data-name="사각형 602" class="cls-2" width="1" height="168" transform="translate(0 68.001) rotate(-90)"/>
+        <rect id="사각형_603" data-name="사각형 603" class="cls-2" width="2" height="168" transform="translate(0 85) rotate(-90)"/>
+        <rect id="사각형_604" data-name="사각형 604" class="cls-2" width="1" height="168" transform="translate(0 101) rotate(-90)"/>
+        <rect id="사각형_605" data-name="사각형 605" class="cls-2" width="1" height="168" transform="translate(0 118) rotate(-90)"/>
+        <rect id="사각형_606" data-name="사각형 606" class="cls-2" width="1" height="168" transform="translate(0 134) rotate(-90)"/>
+        <rect id="사각형_607" data-name="사각형 607" class="cls-2" width="0.585" height="168" transform="translate(0 149.586) rotate(-90)"/>
+        <rect id="사각형_909" data-name="사각형 909" class="cls-2" width="3" height="167.137" transform="translate(0 3) rotate(-90)"/>
+      </g>
+      <g id="그룹_1392" data-name="그룹 1392" transform="translate(0 157)">
+        <rect id="사각형_750" data-name="사각형 750" class="cls-3" width="3" height="11"/>
+      </g>
+      <g id="그룹_1393" data-name="그룹 1393" transform="translate(0 0)">
+        <rect id="사각형_751" data-name="사각형 751" class="cls-3" width="3" height="11" transform="translate(11) rotate(90)"/>
+      </g>
+      <g id="그룹_1394" data-name="그룹 1394" transform="translate(157 0)">
+        <rect id="사각형_751-2" data-name="사각형 751" class="cls-3" width="3" height="11" transform="translate(11) rotate(90)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg id="icon_vds" xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #010809;
+      }
+
+      .cls-2 {
+        stroke: #6ad6ff;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #6ad6ff;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_906" data-name="사각형 906" class="cls-1" width="94" height="94"/>
+  <g id="타원_13" data-name="타원 13" class="cls-2" transform="translate(7 7)">
+    <circle class="cls-5" cx="40" cy="40" r="40"/>
+    <circle class="cls-6" cx="40" cy="40" r="42"/>
+  </g>
+  <g id="Icon_ionic-ios-videocam" data-name="Icon ionic-ios-videocam" transform="translate(18.75 22)">
+    <path id="패스_19" data-name="패스 19" class="cls-3" d="M33.227,10.8a1.165,1.165,0,0,0-.8.333L25.009,17.87a1.217,1.217,0,0,0-.343.888v9.377a1.217,1.217,0,0,0,.343.888l7.421,6.737a1.224,1.224,0,0,0,.8.333h1.784c.412,0,.738-.469.738-1.049v-23.2c0-.58-.335-1.049-.738-1.049Z" transform="translate(21.778 1.359)"/>
+    <path id="패스_20" data-name="패스 20" class="cls-3" d="M36.519,40.587H9.558c-4.016,0-7.308-2.863-7.308-6.342v-18.9C2.25,11.85,5.542,9,9.544,9H36.505c4.016,0,7.294,2.863,7.294,6.342V34.233C43.813,37.724,40.535,40.587,36.519,40.587Z"/>
+  </g>
+  <path id="다각형_44" data-name="다각형 44" class="cls-4" d="M8.5,0,17,15H0Z" transform="translate(51 39) rotate(90)"/>
+</svg>

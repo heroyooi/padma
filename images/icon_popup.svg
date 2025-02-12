@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82">
+    <g data-name="그룹 106">
+        <g data-name="타원 58" transform="translate(7 6.001)" style="fill:#fff;stroke:#000;stroke-width:3px">
+            <circle cx="34.5" cy="34.5" r="34.5" style="stroke:none"/>
+            <circle cx="34.5" cy="34.5" r="36" style="fill:none"/>
+        </g>
+        <text data-name="!" transform="translate(34 61)" style="fill:#233930;font-size:60px;font-family:NHaasGroteskDSPro-95Blk,Neue Haas Grotesk Display Pro"><tspan x="0" y="0">!</tspan></text>
+    </g>
+</svg>
