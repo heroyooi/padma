@@ -1,0 +1,87 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".4">
+        <mask id="6chz60gjia" fill="#fff">
+            <path d="M0 0h40v40H0V0z"/>
+        </mask>
+        <path d="M0 0v-1h-1v1h1zm0 1h40v-2H0v2zm1 39V0h-2v40h2z" fill="#103E62" mask="url(#6chz60gjia)"/>
+        <mask id="78pi8cqdpb" fill="#fff">
+            <path d="M1 1h4v39H1V1z"/>
+        </mask>
+        <path d="M4.5 1v39h1V1h-1z" fill="#103E62" mask="url(#78pi8cqdpb)"/>
+        <mask id="e9y5y81q8c" fill="#fff">
+            <path d="M5 1h4v39H5V1z"/>
+        </mask>
+        <path d="M8.5 1v39h1V1h-1z" fill="#103E62" mask="url(#e9y5y81q8c)"/>
+        <mask id="feeh150t9d" fill="#fff">
+            <path d="M9 1h4v39H9V1z"/>
+        </mask>
+        <path d="M12.5 1v39h1V1h-1z" fill="#103E62" mask="url(#feeh150t9d)"/>
+        <mask id="kz5zyytvze" fill="#fff">
+            <path d="M13 1h4v39h-4V1z"/>
+        </mask>
+        <path d="M16.5 1v39h1V1h-1z" fill="#103E62" mask="url(#kz5zyytvze)"/>
+        <mask id="av908rpiff" fill="#fff">
+            <path d="M17 1h4v39h-4V1z"/>
+        </mask>
+        <path d="M20.5 1v39h1V1h-1z" fill="#103E62" mask="url(#av908rpiff)"/>
+        <mask id="afjlghpx3g" fill="#fff">
+            <path d="M21 1h4v39h-4V1z"/>
+        </mask>
+        <path d="M24.5 1v39h1V1h-1z" fill="#103E62" mask="url(#afjlghpx3g)"/>
+        <mask id="gcw0opk3hh" fill="#fff">
+            <path d="M25 1h4v39h-4V1z"/>
+        </mask>
+        <path d="M28.5 1v39h1V1h-1z" fill="#103E62" mask="url(#gcw0opk3hh)"/>
+        <mask id="8ejtg8oybi" fill="#fff">
+            <path d="M29 1h4v39h-4V1z"/>
+        </mask>
+        <path d="M32.5 1v39h1V1h-1z" fill="#103E62" mask="url(#8ejtg8oybi)"/>
+        <mask id="t2rseautjj" fill="#fff">
+            <path d="M33 1h4v39h-4V1z"/>
+        </mask>
+        <path d="M36.5 1v39h1V1h-1z" fill="#103E62" mask="url(#t2rseautjj)"/>
+        <g clip-path="url(#l3vesyw0tk)">
+            <mask id="crjjj0w8tl" fill="#fff">
+                <path d="M40 1v4H0V1h40z"/>
+            </mask>
+            <path d="M40 4.5H0v1h40v-1z" fill="#103E62" mask="url(#crjjj0w8tl)"/>
+            <mask id="eterfh6m8m" fill="#fff">
+                <path d="M40 5v4H0V5h40z"/>
+            </mask>
+            <path d="M40 8.5H0v1h40v-1z" fill="#103E62" mask="url(#eterfh6m8m)"/>
+            <mask id="jrmfjrg0in" fill="#fff">
+                <path d="M40 9v4H0V9h40z"/>
+            </mask>
+            <path d="M40 12.5H0v1h40v-1z" fill="#103E62" mask="url(#jrmfjrg0in)"/>
+            <mask id="0dgjgdh9bo" fill="#fff">
+                <path d="M40 13v4H0v-4h40z"/>
+            </mask>
+            <path d="M40 16.5H0v1h40v-1z" fill="#103E62" mask="url(#0dgjgdh9bo)"/>
+            <mask id="hwbrtifdxp" fill="#fff">
+                <path d="M40 17v4H0v-4h40z"/>
+            </mask>
+            <path d="M40 20.5H0v1h40v-1z" fill="#103E62" mask="url(#hwbrtifdxp)"/>
+            <mask id="1ktvd1taoq" fill="#fff">
+                <path d="M40 21v4H0v-4h40z"/>
+            </mask>
+            <path d="M40 24.5H0v1h40v-1z" fill="#103E62" mask="url(#1ktvd1taoq)"/>
+            <mask id="pxwuhhg49r" fill="#fff">
+                <path d="M40 25v4H0v-4h40z"/>
+            </mask>
+            <path d="M40 28.5H0v1h40v-1z" fill="#103E62" mask="url(#pxwuhhg49r)"/>
+            <mask id="5it8iwdn5s" fill="#fff">
+                <path d="M40 29v4H0v-4h40z"/>
+            </mask>
+            <path d="M40 32.5H0v1h40v-1z" fill="#103E62" mask="url(#5it8iwdn5s)"/>
+            <mask id="hcqwsfafot" fill="#fff">
+                <path d="M40 33v4H0v-4h40z"/>
+            </mask>
+            <path d="M40 36.5H0v1h40v-1z" fill="#103E62" mask="url(#hcqwsfafot)"/>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="l3vesyw0tk">
+            <path fill="#fff" transform="rotate(90 19.5 20.5)" d="M0 0h39v39H0z"/>
+        </clipPath>
+    </defs>
+</svg>

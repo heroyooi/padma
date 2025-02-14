@@ -10,7 +10,7 @@
   <div id="wrapper">
     <div id="dashboard">
       <h1>Padma Bridge Advanced Traffic Management System</h1>
-      <a href="#" class="graph"><span>Graph</span></a>
+      <!-- <a href="#" class="graph"><span>Graph</span></a> -->
       <div class="road-wrap">
         <div class="road-l"></div>
         <div class="road-r"></div>
@@ -25,10 +25,7 @@
           <span class="edge rb rb2"></span>
 
           <!-- 상단 레일 -->
-          <div class="railroad rail1"><img src="images/img_railroad.svg" alt="" /></div>
-
-          <span class="ico cctv2" style="left: 7px; top: 350px;"><img src="img/ico-cctvb.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 7px; top: 386px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <div class="railroad rail1"><img src="img/img_railroad.svg" alt="" /></div>
 
           <!-- LCS -->
           <span class="lcs red" style="left: 204px; top: 221px;">
@@ -50,13 +47,20 @@
               Change the speed limit</span></p>
           </div>
 
-          <span class="ico tollgate open" style="left: 782px; top: 602px;">
-            <span class="toll"><img src="images/img_toll_01.svg" alt=""></span>
-            <img src="images/icon_tollgate_open.svg" alt="" />
+          <span class="ico tollgate open" style="left: 198px; top: 392px;">
+            <span class="toll">
+              <i class="yellow"></i>
+              <i class="yellow"></i>
+              <i class="yellow"></i>
+              <i class="red"></i>
+              <i class="yellow"></i>
+              <i class="red"></i>
+            </span>
+            <img src="img/icon-tollgate-open.svg" alt="" />
             <span class="txt">Mawa</span>
           </span>
 
-          <!-- 상행선 노선(Real) -->
+          <!-- 상행선 노선 -->
           <div class="svg-gradient-wrap svg-gradient-wrap1-1">
             <svg width="256" height="92" viewBox="0 0 256 92" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M133.254 26.052c-20.549 0-39.338 8.236-52.347 21.135C69.773 58.227 44.85 79.303 3.996 90.681c-1.316.367-2.648.723-3.996 1.068V64.721c33.355-9.962 53.63-27.176 62.564-36.034C80.425 10.977 105.796 0 133.254 0c27.459 0 52.83 10.977 70.691 28.688 7.927 7.859 24.606 22.595 52.055 32.766l-9.519 24.261c-31.525-11.783-51.165-28.896-60.879-38.528-13.009-12.899-31.798-21.135-52.348-21.135z" fill="url(#ilbubor6ua)"/>
@@ -278,11 +282,13 @@
             </svg>
           </div>
 
-          <!-- 상행선 아이콘 -->
-          <span class="ico vms" style="left: 958px; top: 550px;"><img src="images/icon_vms.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 1537px; top: 458px;"><img src="images/icon_cctv.svg" alt=""></span>
-          
-          <div class="fogwrapper red" style="left: 1130px; top: 190px; display: none;">
+          <!-- 상단 아이콘 -->
+          <span class="ico cctv2" style="left: 7px; top: 350px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 7px; top: 386px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 271px; top: 401px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 379px; top: 400px;"><img src="img/ico-cctva.svg" alt=""></span>
+
+          <div class="fogwrapper red" style="left: 468px; top: 248px;">
             <div class="foglayer_01" class="fog">
               <div class="image01"></div>
               <div class="image02"></div>
@@ -296,48 +302,73 @@
               <div class="image02"></div>
             </div>
           </div>
-          <span class="ico rwis fog red" style="left: 1656px; top: 447px;">
-            <img src="images/icon_rwis.svg" alt="" />
+          <span class="ico rwis fog red" style="left: 451px; top: 383px;">
+            <img src="img/ico-rwis.svg" alt="" />
             <i class="num">1</i>
           </span>
 
-          <span class="ico vds" style="left: 1931px; top: 380px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 1931px; top: 480px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          
+          
+          <!-- <span class="ico vms" style="left: 958px; top: 550px;"><img src="img/ico-vms.svg" alt=""></span> -->
+          <span class="ico vds" style="left: 551px; top: 325px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 551px; top: 361px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 641px; top: 377px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 709px; top: 361px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 709px; top: 397px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 758px; top: 367px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 758px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 815px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2094px; top: 418px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 2094px; top: 518px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <div class="fogwrapper yellow" style="left: 902px; top: 248px;">
+            <div class="foglayer_01" class="fog">
+              <div class="image01"></div>
+              <div class="image02"></div>
+            </div>
+            <div class="foglayer_02" class="fog">
+              <div class="image01"></div>
+              <div class="image02"></div>
+            </div>
+            <div class="foglayer_03" class="fog">
+              <div class="image01"></div>
+              <div class="image02"></div>
+            </div>
+          </div>
+          <span class="ico rwis fog yellow" style="left: 885px; top: 403px;">
+            <img src="img/ico-rwis.svg" alt="" />
+            <i class="num">2</i>
+          </span>
 
-          <span class="ico vds" style="left: 2257px; top: 433px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 2257px; top: 533px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico vds" style="left: 931px; top: 367px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 931px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2420px; top: 440px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 2420px; top: 540px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico vds" style="left: 987px; top: 367px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 987px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1040px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2593px; top: 440px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 2593px; top: 540px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1057px; top: 279px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1099px; top: 279px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2755px; top: 441px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 2755px; top: 541px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico vds" style="left: 1152px; top: 342px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1152px; top: 378px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2910px; top: 440px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 2910px; top: 540px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico vds" style="left: 1205px; top: 344px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1205px; top: 380px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 3072px; top: 437px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 3072px; top: 537px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1258px; top: 400px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1302px; top: 403px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1369px; top: 403px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1474px; top: 367px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1474px; top: 403px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1558px; top: 403px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1652px; top: 403px;"><img src="img/ico-cctva.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 3234px; top: 432px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 3234px; top: 532px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico vds" style="left: 1734px; top: 367px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1734px; top: 403px;"><img src="img/ico-cctva.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 3390px; top: 390px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 3390px; top: 490px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <!-- <span class="ico cctv2 northbound" style="left: 0px; top: 0px;"><img src="img/ico-cctvb.svg" alt=""></span> -->
 
-          <span class="ico vds" style="left: 3777px; top: 316px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 northbound" style="left: 3777px; top: 416px;"><img src="images/icon_cctv02.svg" alt=""></span>
-
-          <span class="ico cctv1" style="left: 4189px; top: 483px;"><img src="images/icon_cctv.svg" alt=""></span>
-
-          <!-- 하행선 노선(real) -->
-          <div class="svg-gradient-wrap svg-gradient-wrap1-3">
+          <!-- 하행선 노선 -->
+          <div class="svg-gradient-wrap svg-gradient-wrap1-2">
             <svg width="256" height="92" viewBox="0 0 256 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M133.254 65.697c-20.549 0-39.338-8.236-52.347-21.135C69.773 33.522 44.85 12.446 3.996 1.068A196.223 196.223 0 0 0 0 0v27.028c33.355 9.962 53.63 27.176 62.564 36.034 17.861 17.71 43.232 28.687 70.69 28.687 27.459 0 52.83-10.977 70.691-28.687 7.927-7.86 24.606-22.596 52.055-32.767l-9.519-24.261c-31.525 11.783-51.165 28.896-60.879 38.528-13.009 12.899-31.798 21.135-52.348 21.135z" fill="url(#kaeeoqvk5a)"/>
                 <defs>
@@ -348,7 +379,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap2-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap2-2">
             <svg width="275" height="61" viewBox="0 0 275 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M63.89 26.05h46.811v-.003c16.951 0 34.078 1.798 47.085 3.63a407.075 407.075 0 0 1 15.611 2.502 283.787 283.787 0 0 1 5.417 1.034l.147.03.043.009c6.367 1.513 20.784 5.828 34.154 9.95a2997.583 2997.583 0 0 1 22.82 7.139l1.488.472.098.032c10.757 4.245 21.029 7.59 30.924 10.145L275 35.797c-9.002-2.337-18.375-5.415-28.261-9.334l-8.362-2.681a3020.02 3020.02 0 0 0-17.546-5.472c-11.969-3.69-23.963-7.613-36.163-10.484-.558-.118-1.283-.264-1.916-.389a308.21 308.21 0 0 0-4.714-.889 433.008 433.008 0 0 0-16.619-2.664C147.753 1.96 129.315 0 110.701 0v.003H63.29l-.297.014C38.195 1.15 17.306 6.013 0 12.482l9.517 24.257c14.86-5.507 32.878-9.675 54.373-10.689z" fill="url(#8k1jd1ufra)"/>
                 <defs>
@@ -359,7 +390,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap3-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap3-2">
             <svg width="102" height="32" viewBox="0 0 102 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 25.148c37.465 9.675 69.513 8.015 102 1.073L97 .668C67.11 7.154 39.26 8.502 6.5 0L0 25.148z" fill="url(#qhvtrrgh5a)"/>
                 <defs>
@@ -370,7 +401,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap4-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap4-2">
             <svg width="78" height="47" viewBox="0 0 78 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.032 46.75C26.297 42.206 47.75 35.413 71.01 28.048c2.312-.732 4.641-1.47 6.99-2.211L72.886 0a7565.265 7565.265 0 0 0-9.548 3.003C40.064 10.333 19.596 16.779 0 21.032L5.032 46.75z" fill="url(#7d3agueuaa)"/>
                 <defs>
@@ -381,7 +412,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap5-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap5-2">
             <svg width="70" height="40" viewBox="0 0 70 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M27.84 33.242a303.4 303.4 0 0 1 16.733-3.5 331.16 331.16 0 0 1 25.373-3.59L66.91 0a357.507 357.507 0 0 0-27.025 3.837 329.686 329.686 0 0 0-18.199 3.809c-2.097.504-5.947 1.491-7.238 1.875A2456.833 2456.833 0 0 0 0 14.008L5.145 40a2186.01 2186.01 0 0 1 16.889-5.27c.452-.127 2.484-.69 5.806-1.488z" fill="url(#ncjbdhem3a)"/>
                 <defs>
@@ -392,7 +423,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap6-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap6-2">
             <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 27.497C11.88 26.595 21.52 26 31.5 26H40V0h-8.5C20.404 0 9.75.667 0 1.668l3 25.83z" fill="url(#lfyyd5sb6a)"/>
                 <defs>
@@ -403,7 +434,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap7-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap7-2">
             <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h38V0H0v26z" fill="url(#928u801ada)"/>
                 <defs>
@@ -414,7 +445,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap8-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap8-2">
             <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h36.5V0H0v26z" fill="url(#8xe8yb4xba)"/>
                 <defs>
@@ -425,7 +456,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap9-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap9-2">
             <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h37V0H0v26z" fill="url(#m4pl3ruela)"/>
                 <defs>
@@ -436,7 +467,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap10-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap10-2">
             <svg width="45" height="26" viewBox="0 0 45 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h44.5V0H0v26z" fill="url(#q8674ond8a)"/>
                 <defs>
@@ -447,7 +478,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap11-3">
+          <div class="svg-gradient-wrap svg-gradient-wrap11-2">
             <svg width="145" height="27" viewBox="0 0 145 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26.09h139.481c1.867 0 3.711.088 5.519.247V.175A88.009 88.009 0 0 0 139.481 0H0v26.09z" fill="url(#ubotf4b34a)"/>
                 <defs>
@@ -458,7 +489,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap1-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap12-2">
             <svg width="96" height="53" viewBox="0 0 96 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.11 30.335a81.66 81.66 0 0 1 7.6 3.107c.873.412 1.527.744 1.933.956a26.495 26.495 0 0 1 .47.25l.003.002.007.004.09.051.131.071C51.291 46.574 73.487 52.433 96 52.452v-26c-18.37-.025-36.313-4.9-54.255-14.528a52.68 52.68 0 0 0-1.066-.572c-.694-.363-1.66-.851-2.873-1.424a107.66 107.66 0 0 0-10.042-4.111C20.627 3.297 10.943.687 0 0v26.072c7.217.635 13.859 2.41 19.11 4.263z" fill="url(#ofogyz2spa)"/>
                 <defs>
@@ -469,7 +500,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap2-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap13-2">
             <svg width="83" height="49" viewBox="0 0 83 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m68.665 31.2.045-.022a90.01 90.01 0 0 1 3.005-1.3A122.916 122.916 0 0 1 83 25.875L78.919 0a148.847 148.847 0 0 0-17.103 5.836c-1.557.64-3.116 1.294-4.63 2.034C37.401 17.762 18.484 22.648 0 22.623v26c22.548.019 45.413-5.822 68.665-17.424z" fill="url(#ltjpbl61ea)"/>
                 <defs>
@@ -480,7 +511,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap3-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap14-2">
             <svg width="89" height="30" viewBox="0 0 89 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.098 30c7.087-2.128 15.38-3.895 23.093-3.895h61.247V0H27.19C17.477 0 7.896 1.861 0 4.019L4.098 30z" fill="url(#u2i0db727a)"/>
                 <defs>
@@ -491,7 +522,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap4-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap15-2">
             <svg width="45" height="26" viewBox="0 0 45 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h44.5V0H0v26z" fill="url(#a9i87p9zma)"/>
                 <defs>
@@ -502,7 +533,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap5-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap16-2">
             <svg width="85" height="26" viewBox="0 0 85 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h84.5V0H0v26z" fill="url(#sjkelalvza)"/>
                 <defs>
@@ -513,7 +544,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap6-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap17-2">
             <svg width="91" height="26" viewBox="0 0 91 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h90.5V0H0v26z" fill="url(#s8tahmh9oa)"/>
                 <defs>
@@ -524,7 +555,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap7-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap18-2">
             <svg width="90" height="26" viewBox="0 0 90 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h90V0H0v26z" fill="url(#j0shl6scha)"/>
                 <defs>
@@ -535,7 +566,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap8-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap19-2">
             <svg width="103" height="26" viewBox="0 0 103 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 26h103V0H0v26z" fill="url(#k8gy6zggqa)"/>
                 <defs>
@@ -546,7 +577,7 @@
                 </defs>
             </svg>
           </div>
-          <div class="svg-gradient-wrap svg-gradient-wrap9-4">
+          <div class="svg-gradient-wrap svg-gradient-wrap20-2">
             <svg width="111" height="26" viewBox="0 0 111 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M110.5 26V0H0v26h110.5z" fill="url(#r4q0y2mu8a)"/>
                 <defs>
@@ -558,61 +589,41 @@
             </svg>
           </div>
 
-          <div class="fogwrapper orange" style="left: 2150px; top: 420px;">
-            <div class="foglayer_01" class="fog">
-              <div class="image01"></div>
-              <div class="image02"></div>
-            </div>
-            <div class="foglayer_02" class="fog">
-              <div class="image01"></div>
-              <div class="image02"></div>
-            </div>
-            <div class="foglayer_03" class="fog">
-              <div class="image01"></div>
-              <div class="image02"></div>
-            </div>
-          </div>
-          <span class="ico rwis fog orange" style="left: 2670px; top: 695.8px; z-index: 41;">
-            <img src="images/icon_rwis.svg" alt="" />
-            <i class="num">2</i>
-          </span>
+          
+
+          
 
           <!-- 하행선 아이콘 -->
-          <span class="ico cctv1" style="left: 554px; top: 870px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 1236px; top: 713px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 1329px; top: 882px;"><img src="images/icon_cctv.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 218px; top: 534px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico vds" style="left: 218px; top: 570px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 347px; top: 512px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 464px; top: 534px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 464px; top: 571px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 646px; top: 535px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 646px; top: 571px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 709px; top: 516px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 1931px; top: 905px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 1931px; top: 1005px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 787px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 787px; top: 547px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 831px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 831px; top: 547px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 886px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2094px; top: 875px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 2094px; top: 975px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 938px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 938px; top: 547px;"><img src="img/ico-vds.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2257px; top: 860px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 2257px; top: 960px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 991px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 991px; top: 547px;"><img src="img/ico-vds.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1042px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2420px; top: 856px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 2420px; top: 956px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1103px; top: 522px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico vds" style="left: 1103px; top: 558px;"><img src="img/ico-vds.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2583px; top: 856px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 2583px; top: 956px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1171px; top: 538px;"><img src="img/ico-cctva.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 2745px; top: 857px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 2745px; top: 957px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <!-- <span class="ico cctv2 southbound" style="left: 3397px; top: 1000px;"><img src="images/icon_cctv02.svg" alt=""></span> -->
 
-          <span class="ico vds" style="left: 2908px; top: 858px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 2908px; top: 958px;"><img src="images/icon_cctv02.svg" alt=""></span>
-
-          <span class="ico vds" style="left: 3071px; top: 862px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 3071px; top: 962px;"><img src="images/icon_cctv02.svg" alt=""></span>
-          
-          <span class="ico vds" style="left: 3234px; top: 866px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 3234px; top: 966px;"><img src="images/icon_cctv02.svg" alt=""></span>
-
-          <span class="ico vds" style="left: 3397px; top: 900px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2 southbound" style="left: 3397px; top: 1000px;"><img src="images/icon_cctv02.svg" alt=""></span>
-
-          <div class="fogwrapper yellow" style="left: 3110px; top: 691px;">
+          <div class="fogwrapper orange" style="left: 1248px; top: 248px;">
             <div class="foglayer_01" class="fog">
               <div class="image01"></div>
               <div class="image02"></div>
@@ -626,69 +637,96 @@
               <div class="image02"></div>
             </div>
           </div>
-          <span class="ico rwis fog yellow" style="left: 3620px; top: 941px;">
-            <img src="images/icon_rwis.svg" alt="" />
+          <span class="ico rwis fog orange" style="left: 1231px; top: 525px; z-index: 41;">
+            <img src="img/ico-rwis.svg" alt="" />
             <i class="num">3</i>
           </span>
 
-          <span class="ico cctv1" style="left: 3723px; top: 946px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico vms" style="left: 3828px; top: 935px;"><img src="images/icon_vms.svg" alt=""></span>
-          <span class="ico vds" style="left: 3660px; top: 1050px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2" style="left: 3760px; top: 1050px;"><img src="images/icon_cctv02.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 1334px; top: 511px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1334px; top: 547px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico vds" style="left: 1334px; top: 583px;"><img src="img/ico-vds.svg" alt=""></span>
 
-          <span class="ico vds" style="left: 4142px; top: 940.4px;"><img src="images/icon_vds.svg" alt=""></span>
-          <span class="ico cctv2" style="left: 4142px; top: 1040.4px;"><img src="images/icon_cctv02.svg" alt=""></span>
-
-          <span class="ico cctv2" style="left: 4729px; top: 898px;"><img src="images/icon_cctv02.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 4729px; top: 998px;"><img src="images/icon_cctv.svg" alt=""></span>
-
-          <span class="ico tollgate close" style="left: 4999px; top: 777px;">
-            <span class="toll"><img src="images/img_toll_02.svg" alt=""></span>
-            <img src="images/icon_tollgate_close.svg" alt="" />
-            <span class="txt">Zanzira</span>
+          <span class="ico tollgate close" style="left: 1393px; top: 455px;">
+            <span class="toll">
+              <i class="red"></i>
+              <i class="yellow"></i>
+              <i class="yellow"></i>
+              <i class="yellow"></i>
+              <i class="yellow"></i>
+              <i class="red"></i>
+            </span>
+            <img src="img/icon-tollgate-close.svg" alt="" />
+            <span class="txt">Janjira</span>
           </span>
 
-          <span class="ico cctv2" style="left: 4729px; top: 898px;"><img src="images/icon_cctv02.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 4729px; top: 998px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 4885px; top: 894px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 tip" style="left: 5190px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 tip" style="left: 5420px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 5750px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 6080px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 6410px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 6740px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 7070px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1" style="left: 7400px; top: 897px;"><img src="images/icon_cctv.svg" alt=""></span>
+          <span class="ico cctv1" style="left: 1533px; top: 511px;"><img src="img/ico-cctva.svg" alt=""></span>
+
+          <span class="ico cctv1" style="left: 1601px; top: 511px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico vds" style="left: 1601px; top: 547px;"><img src="img/ico-vds.svg" alt=""></span>
+
+          <span class="ico cctv1" style="left: 1774px; top: 511px;"><img src="img/ico-cctva.svg" alt=""></span>
+
+          <span class="ico cctv1" style="left: 1839px; top: 511px;"><img src="img/ico-cctva.svg" alt=""></span>
+          <span class="ico vds" style="left: 1839px; top: 547px;"><img src="img/ico-vds.svg" alt=""></span>
 
           <!-- 하단 레일 -->
-          <div class="railroad rail2"><img src="images/img_railroad.svg" alt="" /></div>
-          <span class="ico cctv1 sm" style="left: 1900px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 2073px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 2247px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 2420px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 2594px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 2767px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 2941px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 3114px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 3288px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
-          <span class="ico cctv1 sm" style="left: 3461px; top: 1246px;"><img src="images/icon_cctv.svg" alt=""></span>
+          <div class="railroad rail2"><img src="img/img_railroad.svg" alt="" /></div>
+          <span class="ico cctv2" style="left: 578px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 622px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 666px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 710px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 754px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 798px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 842px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
+          <span class="ico cctv2" style="left: 886px; top: 649px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
           <!-- 하단 LCS -->
-          <span class="lcs red" style="left: 3660px; top: 1147px;"><img src="images/lcs/icon_lcs_noway.svg" alt="" /></span>
-          <span class="lcs green" style="left: 3815px; top: 1147px;"><img src="images/lcs/icon_lcs_pass.svg" alt="" /></span>
-          <div class="lcs-panel" style="left: 3660px; top: 1302px;">
-            <span class="point lt"></span><span class="point rt"></span><span class="point lb"></span><span class="point rb"></span>
-            <p>From the front [999m]<p>
-            <p><span class="yellow">Change the speed limit</span></p>
+          <span class="lcs red" style="left: 1412px; top: 591px;">
+            <img src="img/icon-lcs-no.svg" alt="" />
+            <i class="sqaure lt"></i>
+            <i class="sqaure rt"></i>
+            <i class="sqaure lb"></i>
+            <i class="sqaure rb"></i>
+          </span>
+          <span class="lcs green" style="left: 1460px; top: 591px;">
+            <img src="img/icon-lcs-left.svg" alt="" />
+            <i class="sqaure lt"></i>
+            <i class="sqaure rt"></i>
+            <i class="sqaure lb"></i>
+            <i class="sqaure rb"></i>
+          </span>
+          <div class="lcs-panel" style="left: 1412px; top: 643px;">
+            <p>From the front [999] <br />
+              Change the speed limit</span></p>
           </div>
 
           <!-- 돌발 아이콘 -->
-          <span class="ico emer" style="left: 1801px; top: 400px;"><img src="images/icon_emer.png" alt="" /></span>
-          <span class="ico emer" style="left: 1731px; top: 955px;"><img src="images/icon_emer.png" alt="" /></span>
+          <span class="ico emer" style="left: 552px; top: 516px;"><img src="img/icon-emer.png" alt="" /></span>
+          <span class="ico emer" style="left: 1468px; top: 455px;"><img src="img/icon-emer.png" alt="" /></span>
 
-          <div class="s-popup northbound" style="left: 4946px; top: 43px;">
-            <img src="https://via.placeholder.com/716x458/485b5b/95ebeb?text=hoziron+img" alt="">
-            <a href="#" class="btn-close"><img src="images/icon_popup_close.svg" alt="팝업 닫기" /></a>
+          <div class="s-popup northbound" style="right: 3px; top: 3px; display: block;">
+            <div class="popup-slick-wrap">
+              <div class="popup-slick">
+                <div class="slick-slide">
+                  <img src="https://placehold.co/440x308/000000/FFFFFF/png?text=1" alt="">
+                </div>
+                <div class="slick-slide">
+                  <img src="https://placehold.co/440x308/000000/FFFFFF/png?text=2" alt="">
+                </div>
+                <div class="slick-slide">
+                  <img src="https://placehold.co/440x308/000000/FFFFFF/png?text=3" alt="">
+                </div>
+                <div class="slick-slide">
+                  <img src="https://placehold.co/440x308/000000/FFFFFF/png?text=4" alt="">
+                </div>
+                <div class="slick-slide">
+                  <img src="https://placehold.co/440x308/000000/FFFFFF/png?text=5" alt="">
+                </div>
+              </div>
+              <a href="#" class="btn btn-prev">이전 버튼</a>
+              <a href="#" class="btn btn-next">다음 버튼</a>
+            </div>
+            <a href="#" class="btn-close">팝업 닫기</a>
           </div>
 
           <div class="s-popup southbound" style="left: 4936px; top: 1353px;">
@@ -732,6 +770,7 @@
                 </li>
               </ul>
             </div>
+
             <div class="items2">
               <ul>
                 <li>
@@ -748,33 +787,43 @@
                 <li>
                   <dl>
                     <dt class="wind"></dt>
-                    <dd>0.5m/s, NW</dd>
+                    <dd>NW 1m/s</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="distance"></dt>
+                    <dd>2905 M</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="snowrain"></dt>
+                    <dd>0 mm</dd>
                   </dl>
                 </li>
               </ul>
             </div>
-            <div class="items2">
+
+            <div class="items2 col1">
               <ul>
                 <li>
                   <dl>
-                    <dt class="temperature">
+                    <dt class="wind">
                       <span class="ico rwis sm">
                         <img src="img/ico-rwis.svg" alt="" />
                         <i class="num">2</i>
                       </span>
                     </dt>
-                    <dd>32˚C, 26˚C</dd>
-                  </dl>
-                </li>
-                <li>
-                  <dl>
-                    <dt class="wind"></dt>
-                    <dd>0.5m/s, NW</dd>
+                    <dd>NW 1m/s
+
+                    </dd>
                   </dl>
                 </li>
               </ul>
             </div>
-            <div class="items2">
+
+            <div class="items2 evt">
               <ul>
                 <li>
                   <dl>
@@ -791,6 +840,18 @@
                   <dl>
                     <dt class="wind"></dt>
                     <dd>0.5m/s, NW</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="distance"></dt>
+                    <dd>2905 M</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt class="snowrain"></dt>
+                    <dd>0 mm</dd>
                   </dl>
                 </li>
               </ul>
@@ -824,8 +885,6 @@
               </div>
             </div>
           </div>
-
-          
         </div>
       </div><!-- .road-wrap -->
     </div><!-- #dashboard -->
@@ -1007,42 +1066,39 @@
     .svg-gradient-wrap20-1{left:1766.5px;top:443px;}
     
     /* 하행선 */
-    .svg-gradient-wrap1-3{left:1px;top:483.4px;}
-    .svg-gradient-wrap2-3{left:247px;top:477px;}
-    .svg-gradient-wrap3-3{left:515px;top:512.7px;}
-    .svg-gradient-wrap4-3{left:612px;top:492.5px;}
-    .svg-gradient-wrap5-3{left:684.4px;top:478.7px;}
-    .svg-gradient-wrap6-3{left:750.5px;top:477px;}
-    .svg-gradient-wrap7-3{left:790.5px;top:477px;}
-    .svg-gradient-wrap8-3{left:828.5px;top:477px;}
-    .svg-gradient-wrap9-3{left:865px;top:477px;}
-    .svg-gradient-wrap10-3{left:902px;top:477px;}
-    .svg-gradient-wrap11-3{left:946.5px;top:477px;}
-    .svg-gradient-wrap1-4{left:1091px;top:477.2px;}
-    .svg-gradient-wrap2-4{left:1187px;top:481px;}
-    .svg-gradient-wrap3-4{left:1265.9px;top:477px;}
-    .svg-gradient-wrap4-4{left:1354px;top:477px;}
-
-    .svg-gradient-wrap5-4{left:1398.5px;top:477px;}
-    .svg-gradient-wrap6-4{left:1483px;top:477px;}
-    .svg-gradient-wrap7-4{left:1573.5px;top:477px;}
-    .svg-gradient-wrap8-4{left:1663.5px;top:477px;}
-    .svg-gradient-wrap9-4{left:1766.5px;top:477px;}
+    .svg-gradient-wrap1-2{left:1px;top:483.4px;}
+    .svg-gradient-wrap2-2{left:247px;top:477px;}
+    .svg-gradient-wrap3-2{left:515px;top:512.7px;}
+    .svg-gradient-wrap4-2{left:612px;top:492.5px;}
+    .svg-gradient-wrap5-2{left:684.4px;top:478.7px;}
+    .svg-gradient-wrap6-2{left:750.5px;top:477px;}
+    .svg-gradient-wrap7-2{left:790.5px;top:477px;}
+    .svg-gradient-wrap8-2{left:828.5px;top:477px;}
+    .svg-gradient-wrap9-2{left:865px;top:477px;}
+    .svg-gradient-wrap10-2{left:902px;top:477px;}
+    .svg-gradient-wrap11-2{left:946.5px;top:477px;}
+    .svg-gradient-wrap12-2{left:1091px;top:477.2px;}
+    .svg-gradient-wrap13-2{left:1187px;top:481px;}
+    .svg-gradient-wrap14-2{left:1265.9px;top:477px;}
+    .svg-gradient-wrap15-2{left:1354px;top:477px;}
+    .svg-gradient-wrap16-2{left:1398.5px;top:477px;}
+    .svg-gradient-wrap17-2{left:1483px;top:477px;}
+    .svg-gradient-wrap18-2{left:1573.5px;top:477px;}
+    .svg-gradient-wrap19-2{left:1663.5px;top:477px;}
+    .svg-gradient-wrap20-2{left:1766.5px;top:477px;}
   </style>
   <script src="js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/utils.js"></script>
+  <script src="js/slick.js"></script>
   <script>
-    // runMockSvg[0] - 셀렉터
-    // runMockSvg[1] - 빨강, 노랑, 초록, 정보없음의 각각 속도
-    // runMockSvg[2] 0 - 빨강, 1 - 노랑, 2 - 초록, 3 - 정보 없음
     // 상행선
-    runMockSvg('.svg-gradient-wrap1-1', [6000, 4000, 2000, 0], 0); // 빨강 6초, 노랑 4초, 초록 2초 (빨강)
-    runMockSvg('.svg-gradient-wrap2-1', [8000, 6000, 4000, 2000], 2); // 빨강 8초, 노랑 6초, 초록 4초 (초록)
-    runMockSvg('.svg-gradient-wrap3-1', [3000, 5000, 2000, 0], 1); // 빨강 3초, 노랑 5초, 초록 2초 (노랑)
-    runMockSvg('.svg-gradient-wrap4-1', [3000, 5000, 2000, 0], 0); // 빨강 3초, 노랑 5초, 초록 2초 (빨강)
-    runMockSvg('.svg-gradient-wrap5-1', [3000, 5000, 2000, 0], 0); // 빨강 3초, 노랑 5초, 초록 2초 (빨강)
+    runMockSvg('.svg-gradient-wrap1-1', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap2-1', [8000, 6000, 4000, 2000], 2);
+    runMockSvg('.svg-gradient-wrap3-1', [3000, 5000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap4-1', [3000, 5000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap5-1', [3000, 5000, 2000, 0], 0);
     runMockSvg('.svg-gradient-wrap6-1', [3000, 5000, 2000, 0], 0);
     runMockSvg('.svg-gradient-wrap7-1', [3000, 5000, 2000, 0], 2);
     runMockSvg('.svg-gradient-wrap8-1', [3000, 5000, 2000, 0], 2);
@@ -1060,27 +1116,44 @@
     runMockSvg('.svg-gradient-wrap20-1', [6000, 4000, 2000, 0], 0);
 
     // 하행선
-    runMockSvg('.svg-gradient-wrap1-3', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap2-3', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap3-3', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap4-3', [6000, 4000, 2000, 0], 0);
-    runMockSvg('.svg-gradient-wrap5-3', [6000, 4000, 2000, 0], 0);
-    runMockSvg('.svg-gradient-wrap6-3', [6000, 4000, 2000, 0], 0);
-    runMockSvg('.svg-gradient-wrap7-3', [6000, 4000, 2000, 0], 2);
-    runMockSvg('.svg-gradient-wrap8-3', [6000, 4000, 2000, 0], 2);
-    runMockSvg('.svg-gradient-wrap9-3', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap10-3', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap11-3', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap1-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap2-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap3-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap4-2', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap5-2', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap6-2', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap7-2', [6000, 4000, 2000, 0], 2);
+    runMockSvg('.svg-gradient-wrap8-2', [6000, 4000, 2000, 0], 2);
+    runMockSvg('.svg-gradient-wrap9-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap10-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap11-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap12-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap13-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap14-2', [6000, 4000, 2000, 0], 1);
+    runMockSvg('.svg-gradient-wrap15-2', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap16-2', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap17-2', [6000, 4000, 2000, 0], 0);
+    runMockSvg('.svg-gradient-wrap18-2', [6000, 4000, 2000, 0], 2);
+    runMockSvg('.svg-gradient-wrap19-2', [6000, 4000, 2000, 0], 2);
+    runMockSvg('.svg-gradient-wrap20-2', [6000, 4000, 2000, 0], 1);
 
-    runMockSvg('.svg-gradient-wrap1-4', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap2-4', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap3-4', [6000, 4000, 2000, 0], 1);
-    runMockSvg('.svg-gradient-wrap4-4', [6000, 4000, 2000, 0], 0);
-    runMockSvg('.svg-gradient-wrap5-4', [6000, 4000, 2000, 0], 0);
-    runMockSvg('.svg-gradient-wrap6-4', [6000, 4000, 2000, 0], 0);
-    runMockSvg('.svg-gradient-wrap7-4', [6000, 4000, 2000, 0], 2);
-    runMockSvg('.svg-gradient-wrap8-4', [6000, 4000, 2000, 0], 2);
-    runMockSvg('.svg-gradient-wrap9-4', [6000, 4000, 2000, 0], 1);
+    var popupSlick = $('.popup-slick').slick({
+      // autoplay: true,
+      // autoplaySpeed: 3000,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+    });
+    $('.popup-slick-wrap .btn-prev').click(function () {
+      popupSlick.slick('slickPrev');
+    });
+
+    $('.popup-slick-wrap .btn-next').click(function () {
+      popupSlick.slick('slickNext');
+    });
+
+    // popupSlick.slick('refresh');
+    // popupSlick.slick('setPosition');
 
     $('#dashboard .graph').on('click', function(){
       if (!$(this).hasClass('on')) {
@@ -1125,18 +1198,18 @@
       $(this).closest('.s-popup').hide();
     });
 
-    setTimeout(function(){
-      $('.ico.vms').eq(0).addClass('tip');
-    }, 3000);
-    setTimeout(function(){
-      $('.ico.vds').eq(9).addClass('tip');
-    }, 4000);
-    setTimeout(function(){
-      $('.ico.cctv2').eq(11).addClass('tip');
-    }, 5000);
-    setTimeout(function(){
-      $('.ico.vms').eq(1).addClass('tip');
-    }, 6000);
+    // setTimeout(function(){
+    //   $('.ico.vms').eq(0).addClass('tip');
+    // }, 3000);
+    // setTimeout(function(){
+    //   $('.ico.vds').eq(9).addClass('tip');
+    // }, 4000);
+    // setTimeout(function(){
+    //   $('.ico.cctv2').eq(11).addClass('tip');
+    // }, 5000);
+    // setTimeout(function(){
+    //   $('.ico.vms').eq(1).addClass('tip');
+    // }, 6000);
 
     var query = $.urlParam('sample');
 	  if (query === '2' || query === 'chart') {
@@ -1144,9 +1217,9 @@
         setTimeout(function(){
           $('.items-area > div.items1 ul > li').eq(i).addClass('red');
         }, i * 1000);
-        $('.items-area > div.items2:eq(0) ul > li').addClass('red');
-        $('.items-area > div.items2:eq(1) ul > li').addClass('orange');
-        $('.items-area > div.items2:eq(2) ul > li').addClass('yellow');
+        $('.items-area > div.items2.evt ul > li:eq(1)').addClass('red');
+        $('.items-area > div.items2.evt ul > li:eq(2)').addClass('orange');
+        $('.items-area > div.items2.evt ul > li:eq(3)').addClass('yellow');
       }
       if (query === 'chart') {
         setTimeout(function(){
