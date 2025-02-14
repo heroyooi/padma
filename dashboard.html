@@ -288,7 +288,7 @@
           <span class="ico cctv1" style="left: 271px; top: 401px;"><img src="img/ico-cctva.svg" alt=""></span>
           <span class="ico cctv1" style="left: 379px; top: 400px;"><img src="img/ico-cctva.svg" alt=""></span>
 
-          <div class="fogwrapper red" style="left: 468px; top: 248px;">
+          <div class="fogwrapper red" style="left: 468px; top: 248px; display: none;">
             <div class="foglayer_01" class="fog">
               <div class="image01"></div>
               <div class="image02"></div>
@@ -319,7 +319,7 @@
           <span class="ico cctv2" style="left: 758px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
           <span class="ico cctv2" style="left: 815px; top: 403px;"><img src="img/ico-cctvb.svg" alt=""></span>
 
-          <div class="fogwrapper yellow" style="left: 902px; top: 248px;">
+          <div class="fogwrapper yellow" style="left: 902px; top: 248px; display: none;">
             <div class="foglayer_01" class="fog">
               <div class="image01"></div>
               <div class="image02"></div>
@@ -623,7 +623,7 @@
 
           <!-- <span class="ico cctv2 southbound" style="left: 3397px; top: 1000px;"><img src="images/icon_cctv02.svg" alt=""></span> -->
 
-          <div class="fogwrapper orange" style="left: 1248px; top: 248px;">
+          <div class="fogwrapper orange" style="left: 1248px; top: 248px; display: none;">
             <div class="foglayer_01" class="fog">
               <div class="image01"></div>
               <div class="image02"></div>
@@ -702,7 +702,7 @@
 
           <!-- 돌발 아이콘 -->
           <span class="ico emer" style="left: 552px; top: 516px;"><img src="img/icon-emer.png" alt="" /></span>
-          <span class="ico emer" style="left: 1468px; top: 455px;"><img src="img/icon-emer.png" alt="" /></span>
+          <!-- <span class="ico emer" style="left: 1468px; top: 455px;"><img src="img/icon-emer.png" alt="" /></span> -->
 
           <div class="s-popup northbound" style="right: 3px; top: 3px; display: block;">
             <div class="popup-slick-wrap">
@@ -888,7 +888,7 @@
         </div>
       </div><!-- .road-wrap -->
     </div><!-- #dashboard -->
-    <div class="popup-dimm"></div>
+    <!-- <div class="popup-dimm"></div> -->
     <div class="modal-wrap">
       <div class="modal-inner">
         <span class="time">08 / 10 / 2022 12:00:00</span>
@@ -900,35 +900,29 @@
       </div>
     </div>
     <div class="popup-wrap">
-      <div class="popup-inner">
-        <div class="top-info">
-          <span class="time">08 / 10 / 2022 12:00:00</span>
-          <span class="con"><strong>[3090123200]</strong> Judgment 61Score</span>
+      <div class="tit-area">
+        <span class="emer"></span>
+        <div class="tx-wrap">
+          <p class="tx1">[Running backwards] 06-01-2025 09:09:53</p>
+          <p class="tx2">VDS_004] [SPT_004_00] [X좌표, Y좌표]</p>
         </div>
-        <div class="content-wrap">
-          <div class="white-box"></div>
-          <div class="black-box"></div>
-        </div>
-        <div class="tail-wrap">
-          <span class="chk-base">
-            <input type="checkbox" id="chk-alarm" />
-            <label for="chk-alarm">Turn off the alarm for 30 minutes</label>
-          </span>
-          <div class="btns-wrap">
-            <a href="#" class="btn1">Ignore</a>
-            <a href="#" class="btn2">Response</a>
-          </div>
-        </div>
+        <a href="#" class="btn-close"></a>
+      </div>
+      <div class="con-area">
+        <ul class="pic-list">
+          <li><img src="https://placehold.co/494x274/000000/FFFFFF/png?text=1" alt=""></li>
+          <li><img src="https://placehold.co/494x274/000000/FFFFFF/png?text=2" alt=""></li>
+        </ul>
       </div>
     </div>
     <!-- INFO -->
-    <div class="info-area" style="top: 50px; right: 50px;">
+    <!-- <div class="info-area" style="top: 50px; right: 50px;">
       <span class="edge lt"></span>
       <span class="edge rt"></span>
       <span class="edge lb"></span>
       <span class="edge rb"></span>
       <div class="info-inner"><img src="https://via.placeholder.com/1037x571/485b5b/95ebeb?text=hoziron+img" alt="" /></div>
-    </div>
+    </div> -->
 
     <div class="bottom-wrap">
       <div class="bottom-item">
@@ -1019,7 +1013,7 @@
               <li class="current">Response</li>
               <li>Close</li>
             </ul>
-            <p class="r-tit">Damage Of Human Life</p>
+            <!-- <p class="r-tit">Damage Of Human Life</p> -->
             <ul class="r-list">
               <li>
                 <span class="num">1</span>
@@ -1155,6 +1149,11 @@
     // popupSlick.slick('refresh');
     // popupSlick.slick('setPosition');
 
+    $('.popup-wrap .btn-close').on('click', function(e){
+      e.preventDefault();
+      $(this).closest('.popup-wrap').hide();
+    });
+
     $('#dashboard .graph').on('click', function(){
       if (!$(this).hasClass('on')) {
         $(this).addClass('on');
@@ -1211,35 +1210,31 @@
     //   $('.ico.vms').eq(1).addClass('tip');
     // }, 6000);
 
-    var query = $.urlParam('sample');
-	  if (query === '2' || query === 'chart') {
-      for (let i=0; i < 5; i++) {
-        setTimeout(function(){
-          $('.items-area > div.items1 ul > li').eq(i).addClass('red');
-        }, i * 1000);
-        $('.items-area > div.items2.evt ul > li:eq(1)').addClass('red');
-        $('.items-area > div.items2.evt ul > li:eq(2)').addClass('orange');
-        $('.items-area > div.items2.evt ul > li:eq(3)').addClass('yellow');
-      }
-      if (query === 'chart') {
-        setTimeout(function(){
-          $('#dashboard .graph').click();
-        }, 250);
-      }
+    for (let i=0; i < 5; i++) {
+      setTimeout(function(){
+        $('.items-area > div.items1 ul > li').eq(i).addClass('red');
+      }, i * 1000);
+      $('.items-area > div.items2.evt ul > li:eq(1)').addClass('red');
+      $('.items-area > div.items2.evt ul > li:eq(2)').addClass('orange');
+      $('.items-area > div.items2.evt ul > li:eq(3)').addClass('yellow');
     }
+
+    var query = $.urlParam('sample');
     if (query === 'fog') {
       setTimeout(function(){
-          $('.items-area > div.items2').eq(2).find('li').addClass('fog');
+        // $('.items-area > div.items2').eq(2).find('li').addClass('fog');
+        $('.fogwrapper').show();
       }, 250);
-    } else if (query === 'accident') {
-      $('.popup-dimm, .modal-wrap').show();
-    } else if (query === 'popup') {
-      $('.popup-dimm, .popup-wrap').show();
+    // } else if (query === 'accident') {
+    //   $('.popup-dimm, .modal-wrap').show();
+    // } else if (query === 'popup') {
+    //   $('.popup-dimm, .popup-wrap').show();
     } else if (query === 'info') {
-      $('.popup-dimm, .info-area').show();
-      setTimeout(function(){
-        $('.ico.tip').click();
-      }, 250);
+      // $('.popup-dimm, .info-area').show();
+      // setTimeout(function(){
+      //   $('.ico.tip').click();
+      // }, 250);
+      $('.bottom-wrap').show();
     }
   </script>
 </body>
