@@ -86,3 +86,9 @@ $.urlParam = function(name){
     return decodeURI(results[1]) || 0;
   }
 }
+
+$(function(){
+  $('.lcs').each(function(){
+    $(this).append(`<i class="sqaure lt"></i><i class="sqaure rt"></i><i class="sqaure lb"></i><i class="sqaure rb"></i>`);
+  });
+});
