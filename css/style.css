@@ -89,9 +89,10 @@
 .ico.tollgate.close .s-toll{right:-18px;top:22px;}
 .ico.rwis i.num{display:inline-block;width:14px;height:14px;border-radius:7px;background-color:#fff;font-size:11px;font-weight:bold;color:#000;text-align:center;font-style:normal;position:absolute;left:-4px;top:-4px;line-height:1.4;}
 .ico.rwis.sm i.num{width:14px;height:14px;border-radius:15px;font-size:11px;left:-4px;top:-4px;}
-.ico.tip{cursor:pointer;width:42px;margin:-6px 0 0 -6px;/*z-index:101;*/}
+.ico.tip{/*cursor:pointer;width:42px;margin:-6px 0 0 -6px;z-index:101;*/}
 .ico.tip:after{content:'';display:block;width:16px;height:16px;background:url(../img/i.svg) 0 0 no-repeat;position:absolute;left:-10px;top:-10px;}
 .ico.tip.blur{z-index:101;}
+.ico.cctv1, .ico.cctv2, .ico.vds{cursor:pointer;}
 
 .lcs{display:flex;align-items:center;justify-content:center;width:44px;height:44px;position:absolute;font-size:19px;font-weight:500;color:#fff;text-align:center;font-family:'Roboto';}
 .lcs.red{background-image: linear-gradient(to bottom, rgba(226, 0, 0, 0.6), rgba(136, 0, 0, 0.6));}
@@ -305,10 +306,20 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 
 .fogwrapper {
   overflow: hidden;
-  height: 440px;
   position: absolute;
-  width: 798px;
   filter: blur(10px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+.fogwrapper_1 {
+  width: 434px;
+  height: 440px;
+}
+.fogwrapper_2 {
+  width: 346px;
+  height: 440px;
+}
+.fogwrapper_3 {
+  width: 346px;
+  height: 440px;
 }
 .foglayer_01, .foglayer_02, .foglayer_03 {
   height: 100%;
@@ -347,35 +358,35 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 
 .fogwrapper.red .foglayer_01 .image01,
 .fogwrapper.red .foglayer_01 .image02 {
-  background-image: url("../images/img_fog_r.png");
+  background-image: url("../img/img-mist-r-01.png");
 }
 .fogwrapper.red .foglayer_02 .image01,
 .fogwrapper.red .foglayer_02 .image02,
 .fogwrapper.red .foglayer_03 .image01,
 .fogwrapper.red .foglayer_03 .image02{
-  background-image: url("../images/img_fog_r_02.png");
+  background-image: url("../img/img-mist-r-02.png");
 }
 
 .fogwrapper.orange .foglayer_01 .image01,
 .fogwrapper.orange .foglayer_01 .image02 {
-  background-image: url("../images/img_fog_o.png");
+  background-image: url("../img/img-mist-o-01.png");
 }
 .fogwrapper.orange .foglayer_02 .image01,
 .fogwrapper.orange .foglayer_02 .image02,
 .fogwrapper.orange .foglayer_03 .image01,
 .fogwrapper.orange .foglayer_03 .image02{
-  background-image: url("../images/img_fog_o_02.png");
+  background-image: url("../img/img-mist-o-02.png");
 }
 
 .fogwrapper.yellow .foglayer_01 .image01,
 .fogwrapper.yellow .foglayer_01 .image02 {
-  background-image: url("../images/img_fog_y.png");
+  background-image: url("../img/img-mist-y-01.png");
 }
 .fogwrapper.yellow .foglayer_02 .image01,
 .fogwrapper.yellow .foglayer_02 .image02,
 .fogwrapper.yellow .foglayer_03 .image01,
 .fogwrapper.yellow .foglayer_03 .image02{
-  background-image: url("../images/img_fog_y_02.png");
+  background-image: url("../img/img-mist-y-02.png");
 }
 
 /* ---------- Keyframe Layer 1 ---------- */

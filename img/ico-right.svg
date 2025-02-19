@@ -1,9 +1,10 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g filter="url(#9f3phwg4da)">
+    <path fill="#000" fill-opacity=".25" d="M0 0h32v32H0z"/>
+    <g filter="url(#ytqkacgima)">
         <path d="m13 23 7-7-7-7" stroke="#fff" stroke-linecap="round"/>
     </g>
     <defs>
-        <filter id="9f3phwg4da" x="8.5" y="4.5" width="16.207" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter id="ytqkacgima" x="8.5" y="4.5" width="16.207" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feOffset/>
