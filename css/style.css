@@ -52,8 +52,8 @@
 .ico.sm{width:32px;}
 .ico.cctv2.northbound, .ico.cctv2.southbound{cursor:pointer;}
 .ico.blur:before, .ico.fog:before{content:'';display:block;width:100%;height:100%;position:absolute;left:50%;top:50%;border-radius:50%;transform:translate(-50%, -50%);}
-.ico.blur:before{animation:blurAnimation 2s infinite ease-in-out;}
-.ico.rwis.fog:before{animation:blurAnimation 2s infinite ease-in-out;}
+.ico.blur:before{animation:blurAnimation 1s infinite ease-in-out;}
+.ico.rwis.fog:before{animation:blurAnimation 1s infinite ease-in-out;}
 .ico.rwis.fog.red:before{background-color:#e60000;}
 .ico.rwis.fog.orange:before{background-color:#e68200;}
 .ico.rwis.fog.yellow:before{background-color:#ffe600;}
@@ -63,10 +63,10 @@
 .ico.vds.blur:before{background-color:#6ad6ff;}
 .ico.rwis.blur:before{background-color:#ffffff;}
 .ico.emer{width:32px;z-index:101;}
-.ico.emer:before{content:'';display:block;width:100%;height:100%;position:absolute;left:50%;top:50%;border-radius:50%;transform:translate(-50%, -50%);background-color:#f00;animation:emerAnimation 2s infinite ease-in-out;}
+.ico.emer:before{content:'';display:block;width:100%;height:100%;position:absolute;left:50%;top:50%;border-radius:50%;transform:translate(-50%, -50%);background-color:#f00;animation:emerAnimation 1s infinite ease-in-out;}
 @keyframes blurAnimation {
   0%, 100% { filter: blur(38px); width:0; height:0; }
-  50% { filter: blur(38px); width:125%; height:125%; }
+  50% { filter: blur(38px); /*width:125%; height:125%;*/ width:100%; height:100%;}
 }
 @keyframes emerAnimation {
   0%, 100% { filter: blur(19px); width:0; height:0; }
@@ -390,22 +390,42 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 }
 
 /* ---------- Keyframe Layer 1 ---------- */
-@keyframes foglayer_01_opacity {
+/* @keyframes foglayer_01_opacity {
   0% { opacity: .1; }
   22% { opacity: .5; }
   40% { opacity: .28; }
   58% { opacity: .4; }
   80% { opacity: .16; }
   100% { opacity: .1; }
-}
+} */
 /* ---------- Keyframe Layer 2 ---------- */
-@keyframes foglayer_02_opacity {
+/* @keyframes foglayer_02_opacity {
   0% { opacity: .5; }
   25% { opacity: .2; }
   50% { opacity: .1; }
   80% { opacity: .3; }
   100% { opacity: .5; }
+} */
+
+/* ---------- Keyframe Layer 1 ---------- */
+@keyframes foglayer_01_opacity {
+  0% { opacity: .3; }
+  22% { opacity: .7; }
+  40% { opacity: .5; }
+  58% { opacity: .6; }
+  80% { opacity: .3; }
+  100% { opacity: .2; }
 }
+
+/* ---------- Keyframe Layer 2 ---------- */
+@keyframes foglayer_02_opacity {
+  0% { opacity: .7; }
+  25% { opacity: .5; }
+  50% { opacity: .4; }
+  80% { opacity: .6; }
+  100% { opacity: .7; }
+}
+
 /* ---------- Keyframe Layer 3 ---------- */
 @keyframes foglayer_03_opacity {
   0% { opacity: .8; }
