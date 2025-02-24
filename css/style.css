@@ -109,7 +109,8 @@
 .lcs.yellow .sqaure{background-color:#dcbb00;}
 .lcs.black .sqaure{background-color:#b1b1b1;}
 
-.lcs-panel{display:inline-block;position: absolute;width:280px;background-color: #010809;border:1px solid #70798a;padding:13px 12px;min-height:80px;display:flex;align-items:center;}
+.lcs-panel{display:inline-block;position: absolute;width:280px;background-color: #010809;border:1px solid #70798a;min-height:80px;display:flex;align-items:center;}
+.lcs-panel:not(.ver_img){padding:13px 12px;}
 .lcs-panel p{font-size:18px;color:#fff;line-height:1.4;font-weight:normal;}
 .lcs-panel p:first-child{margin-top:0;}
 .lcs-panel.no-data{justify-content:center;}
