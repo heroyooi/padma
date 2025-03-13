@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="633.502" height="346" viewBox="0 0 633.502 346">
+    <defs>
+        <filter id="p2x38ges6a">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="49.5" result="blur"/>
+            <feFlood flood-color="#3c7ab8" flood-opacity=".31" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-type="innerShadowGroup">
+        <g data-name="bg_popup_cctv" style="fill:#041328">
+            <path d="M232.5 0v269.125L0 288.5l232.5 19.375V346h401V0z" style="stroke:none" transform="rotate(180 316.751 173)"/>
+            <path d="M233.502 1v269.046L12.042 288.5l221.46 18.455V345h399V1h-399m-1-1h401v346h-401v-38.125L0 288.499l232.502-19.374V0z" style="stroke:none" transform="rotate(180 316.751 173)"/>
+        </g>
+        <g style="filter:url(#p2x38ges6a)">
+            <g data-name="bg_popup_cctv" style="fill:#fff">
+                <path d="M232.5 0v269.125L0 288.5l232.5 19.375V346h401V0z" style="stroke:none" transform="rotate(180 316.75 173)"/>
+                <path d="M233.502 1v269.046L12.042 288.5l221.46 18.455V345h399V1h-399m-1-1h401v346h-401v-38.125L0 288.499l232.502-19.374V0z" style="stroke:none" transform="rotate(180 316.75 173)"/>
+            </g>
+        </g>
+        <g data-name="bg_popup_cctv" style="fill:none">
+            <path d="M232.5 0v269.125L0 288.5l232.5 19.375V346h401V0z" style="stroke:none" transform="rotate(180 316.751 173)"/>
+            <path d="M233.502 1v269.046L12.042 288.5l221.46 18.455V345h399V1h-399m-1-1h401v346h-401v-38.125L0 288.499l232.502-19.374V0z" style="fill:rgba(0,177,255,.74);stroke:none" transform="rotate(180 316.751 173)"/>
+        </g>
+    </g>
+</svg>

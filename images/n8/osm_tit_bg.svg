@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="66" viewBox="0 0 570 66">
+    <defs>
+        <linearGradient id="64b5yddbcb" x2="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1a263c" stop-opacity="0"/>
+            <stop offset=".326" stop-color="#0d91bb"/>
+            <stop offset=".502" stop-color="#9affd6"/>
+            <stop offset=".699" stop-color="#009dcf"/>
+            <stop offset="1" stop-color="#262f3e" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="fa48yguoda">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="23" result="blur"/>
+            <feFlood flood-color="#038bcb" flood-opacity=".561" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 9565">
+        <path data-name="패스 561" d="M14.975.034h6.869L6.314 25.081H-.555z" transform="translate(525.157 40.919)" style="opacity:.72;fill:#038bcb"/>
+        <path data-name="패스 560" d="M14.975.034h6.869L6.314 25.081H-.555z" transform="translate(537.157 40.919)" style="opacity:.51;fill:#038bcb"/>
+        <path data-name="패스 559" d="M14.975.034h6.869L6.314 25.081H-.555z" transform="translate(548.157 40.919)" style="opacity:.33;fill:#038bcb"/>
+    </g>
+    <g data-name="그룹 9614">
+        <path data-name="패스 572" d="M6.314.034H-.555l15.53 25.047h6.869z" transform="translate(23.555 40.919)" style="opacity:.72;fill:#038bcb"/>
+        <path data-name="패스 573" d="M6.314.034H-.555l15.53 25.047h6.869z" transform="translate(11.555 40.919)" style="opacity:.51;fill:#038bcb"/>
+        <path data-name="패스 574" d="M6.314.034H-.555l15.53 25.047h6.869z" transform="translate(.555 40.919)" style="opacity:.33;fill:#038bcb"/>
+    </g>
+    <g data-name="구성 요소 15 – 1">
+        <g data-name="그룹 9517">
+            <g data-type="innerShadowGroup">
+                <g data-name="합치기 6" style="fill:#061225">
+                    <path d="M483.644 65.454H16.001L.5 41.482V22.048L15.985.5H483.66l15.482 21.548v19.434l-15.499 23.972z" style="stroke:none" transform="translate(35)"/>
+                    <path d="m483.372 64.954 15.27-23.62V22.21L483.405 1H16.24L1 22.21v19.125l15.273 23.62h467.1m.544 1H15.728L0 41.63V21.887L15.728 0h468.189l15.726 21.887V41.63l-15.726 24.324z" style="stroke:none" transform="translate(35)"/>
+                </g>
+                <g style="filter:url(#fa48yguoda)">
+                    <g data-name="합치기 6" style="fill:#fff">
+                        <path d="M483.644 65.454H16.001L.5 41.482V22.048L15.985.5H483.66l15.482 21.548v19.434l-15.499 23.972z" style="stroke:none" transform="translate(35)"/>
+                        <path d="m483.372 64.954 15.27-23.62V22.21L483.405 1H16.24L1 22.21v19.125l15.273 23.62h467.1m.544 1H15.728L0 41.63V21.887L15.728 0h468.189l15.726 21.887V41.63l-15.726 24.324z" style="stroke:none" transform="translate(35)"/>
+                    </g>
+                </g>
+                <g data-name="합치기 6" style="fill:none">
+                    <path d="M483.644 65.454H16.001L.5 41.482V22.048L15.985.5H483.66l15.482 21.548v19.434l-15.499 23.972z" style="stroke:none" transform="translate(35)"/>
+                    <path d="m483.372 64.954 15.27-23.62V22.21L483.405 1H16.24L1 22.21v19.125l15.273 23.62h467.1m.544 1H15.728L0 41.63V21.887L15.728 0h468.189l15.726 21.887V41.63l-15.726 24.324z" style="fill:#038bcb;stroke:none" transform="translate(35)"/>
+                </g>
+            </g>
+            <path data-name="사각형 9439" transform="translate(156.773 64.954)" style="fill:url(#64b5yddbcb)" d="M0 0h255v1H0z"/>
+        </g>
+    </g>
+</svg>

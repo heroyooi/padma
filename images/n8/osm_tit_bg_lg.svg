@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="894" height="66" viewBox="0 0 894 66">
+    <defs>
+        <filter id="iupwn6oi9a">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="23" result="blur"/>
+            <feFlood flood-color="#038bcb" flood-opacity=".561" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-type="innerShadowGroup">
+        <g data-name="img_title_close" style="fill:#061225">
+            <path d="M582.727 65h-861.454L-294 40.646V25.27L-278.73 1h861.457L598 25.269v15.376L582.727 65z" style="stroke:none" transform="translate(295)"/>
+            <path d="M582.174 64 597 40.358v-14.8L582.176 2h-860.352L-293 25.557V40.36l14.826 23.64h860.348m1.106 2h-862.56L-295 40.935V24.98L-279.28 0h862.56L599 24.98v15.953L583.28 66z" style="stroke:none" transform="translate(295)"/>
+        </g>
+        <g style="filter:url(#iupwn6oi9a)">
+            <g data-name="img_title_close" style="fill:#fff">
+                <path d="M582.727 65h-861.454L-294 40.646V25.27L-278.73 1h861.457L598 25.269v15.376L582.727 65z" style="stroke:none" transform="translate(295)"/>
+                <path d="M582.174 64 597 40.358v-14.8L582.176 2h-860.352L-293 25.557V40.36l14.826 23.64h860.348m1.106 2h-862.56L-295 40.935V24.98L-279.28 0h862.56L599 24.98v15.953L583.28 66z" style="stroke:none" transform="translate(295)"/>
+            </g>
+        </g>
+        <g data-name="img_title_close" style="fill:none">
+            <path d="M582.727 65h-861.454L-294 40.646V25.27L-278.73 1h861.457L598 25.269v15.376L582.727 65z" style="stroke:none" transform="translate(295)"/>
+            <path d="M582.174 64 597 40.358v-14.8L582.176 2h-860.352L-293 25.557V40.36l14.826 23.64h860.348m1.106 2h-862.56L-295 40.935V24.98L-279.28 0h862.56L599 24.98v15.953L583.28 66z" style="fill:#038bcb;stroke:none" transform="translate(295)"/>
+        </g>
+    </g>
+</svg>

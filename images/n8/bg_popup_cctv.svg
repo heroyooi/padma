@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="633.501" height="346" viewBox="0 0 633.501 346">
+    <defs>
+        <filter id="z23x2iahya">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="49.5" result="blur"/>
+            <feFlood flood-color="#3c7ab8" flood-opacity=".31" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-type="innerShadowGroup">
+        <g data-name="bg_popup_cctv" style="fill:#041328">
+            <path d="M-4609.5 7490v-269.125L-4842 7201.5l232.5-19.375V7144h401v346z" style="stroke:none" transform="translate(4842.001 -7144)"/>
+            <path d="M-4209.5 7489v-344h-398.999v38.045l-.917.077-220.542 18.378 221.459 18.454V7489h399m1 1h-401v-269.125l-232.502-19.375 232.502-19.375V7144h401v346z" style="stroke:none" transform="translate(4842.001 -7144)"/>
+        </g>
+        <g style="filter:url(#z23x2iahya)">
+            <g data-name="bg_popup_cctv" style="fill:#fff">
+                <path d="M-4609.5 7490v-269.125L-4842 7201.5l232.5-19.375V7144h401v346z" style="stroke:none" transform="translate(4842 -7144)"/>
+                <path d="M-4209.5 7489v-344h-398.999v38.045l-.917.077-220.542 18.378 221.459 18.454V7489h399m1 1h-401v-269.125l-232.502-19.375 232.502-19.375V7144h401v346z" style="stroke:none" transform="translate(4842 -7144)"/>
+            </g>
+        </g>
+        <g data-name="bg_popup_cctv" style="fill:none">
+            <path d="M-4609.5 7490v-269.125L-4842 7201.5l232.5-19.375V7144h401v346z" style="stroke:none" transform="translate(4842.001 -7144)"/>
+            <path d="M-4209.5 7489v-344h-398.999v38.045l-.917.077-220.542 18.378 221.459 18.454V7489h399m1 1h-401v-269.125l-232.502-19.375 232.502-19.375V7144h401v346z" style="fill:rgba(0,177,255,.74);stroke:none" transform="translate(4842.001 -7144)"/>
+        </g>
+    </g>
+</svg>
