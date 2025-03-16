@@ -450,13 +450,23 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 
 .lcs-box{width:660px;height:166px;border:2px solid #70798a;background-color: #101010;position: absolute;}
 
-#dashboard-n8 h1{position:absolute;left:50%;top:22px;transform:translateX(-50%);text-shadow: 0 0 8px #2449aa;background-image: linear-gradient(to bottom, #f1f1f1, #959fa6);font-family: "Roboto";font-size: 29px;font-weight: bold;-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;}
-#dashboard-n8{width:1920px;height:1080px;background:#151c2b;padding:38px 16px 0;position: relative;}
+#dashboard-n8{width:1920px;height:1080px;background:#151c2b;position: relative;}
+#dashboard-n8 .n8-road-tit{position: absolute;left:0;top:0;width:100%;height:68px;z-index:1;}
+#dashboard-n8 h1{position:absolute;left:50%;top:22px;transform:translateX(-50%);text-shadow: 0 0 8px #2449aa;background-image: linear-gradient(to bottom, #f1f1f1, #959fa6);font-family: "Roboto";font-size: 29px;font-weight: bold;-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;line-height:34px;}
 .n8-map-wrap{position: absolute;left:0;top:0;width:100%;height:100%;}
-.n8-road-wrap{position: relative;width:1888px;height:30px;background:url(../img/n8/img-frame-top.png) 0 0 no-repeat;}
+.n8-road-wrap{position: relative;width:100%;height:100%;padding:38px 16px 0;}
+.n8-road-wrap .n8-road-bg{position:absolute;z-index:1;display:block;}
+.n8-road-wrap .n8-road-bg.t{width:100%;height:30px;background:url(../img/n8/img-frame-top.png) 0 0 no-repeat;position: relative;}
+.n8-road-wrap .n8-road-bg.l, .n8-road-wrap .n8-road-bg.r{width:1px;height:735px;background-color:#00b1ff;top:68px;}
+.n8-road-wrap .n8-road-bg.l{left:16px;}
+.n8-road-wrap .n8-road-bg.r{right:16px;}
+.n8-road-wrap .n8-road-bg.b{width:1860px;height:1px;background-color:#00b1ff;top:816px;left:30px;}
+.n8-road-wrap .n8-road-bg.edge{width:14px;height:14px;top:803px;}
+.n8-road-wrap .n8-road-bg.edge.e1{background:url(../img/n8/img-frame-bottom-left.png) 0 0 no-repeat;left:16px;}
+.n8-road-wrap .n8-road-bg.edge.e2{background:url(../img/n8/img-frame-bottom-right.png) 0 0 no-repeat;right:16px;}
 .n8-flo-wrp{position:absolute;z-index:1;}
-.n8-flo-wrp.lt{left:72px;top:26px;}
-.n8-flo-wrp.rt{left:1528px;top:26px;}
+.n8-flo-wrp.lt{left:89px;top:58px;}
+.n8-flo-wrp.rt{left:1545px;top:58px;}
 .n8-flo-cont{margin-top:20px;position: relative;}
 .n8-flo-cont:first-child{margin-top:0;}
 .n8-flo-text{position: relative;z-index:1;cursor:pointer;}
@@ -511,7 +521,7 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 
 .equiment-list{width:100%;}
 .equiment-list:after{content:'';display:block;clear:both;}
-.equiment-list > li{float:left;width:256px;font-family:'Roboto';margin:0 30px;text-align:center;position: relative;}
+.equiment-list > li{float:left;width:78px;font-family:'Roboto';margin:0 8px;text-align:center;position: relative;}
 .equiment-list > li:nth-child(4n+1){margin-left:0;}
 .equiment-list > li:nth-child(4n+4){margin-right:0;}
 .equiment-list > li dt{position: relative;}
@@ -524,14 +534,14 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
   transition:background-color 0.2s;
 }
 .equiment-list > li dt div{
-  font-size:38px;color: rgba(255, 255, 255, 0.77);padding:37px 0;position: relative;
+  font-size:12px;color: #fff;padding:8px 0;position: relative;
   box-shadow: inset 0 0 99px 0 rgba(60, 122, 184, 0.31);
   -webkit-backdrop-filter: blur(13px);
   backdrop-filter: blur(13px);
   border: solid 1px rgba(0, 177, 255, 0.74);
   transition:border 0.2s;
 }
-.equiment-list > li dt em{color:#fff;font-size:48px;font-weight:bold;}
+.equiment-list > li dt em{color:#fff;font-size:16px;font-weight:bold;}
 .equiment-list > li.warning dt div{
   border: solid 1px #cf1d1d;
 }
@@ -539,7 +549,7 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
   /* background-color: rgba(255, 0, 0, 0.81); */
   background-color: rgba(255, 0, 0, 0.41); /* 재플린 코드랑 다르게 0.3 정도를 빼야 시안과 비슷하게 나옴 */
 }
-.equiment-list > li dd{font-size:38px;line-height:46px;color:#bbc4d9;margin-top:14px;}
+.equiment-list > li dd{font-size:12px;line-height:14px;color:#bbc4d9;margin-top:4px;}
 
 .acc-slide .slick-slide{padding:4px 0;}
 .acc-slide .acc-cont{box-shadow: inset 0 0 24px 0 rgba(3, 138, 202, 0.65);border: solid 1px #038aca;background-color: rgba(0, 0, 0, 0.72);padding:8px;display:flex;align-items:center;justify-content:space-between;font-family:'Roboto';transition:all 0.2s;}
@@ -576,7 +586,7 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 .i-cctv{display:inline-block;width:32px;height:32px;background:url(../img/n8/ico-cctv-line-off.png) 0 0 no-repeat;cursor:pointer;}
 .i-cctv.on{background:url(../img/n8/ico-cctv-line-on.png) 0 0 no-repeat;}
 .cctv-wrap .i-cctv{position:absolute;top:0;}
-.route-wrap{height:168px;width:100%;bottom:40px;position: absolute;left:0;font-size:0;border:1px solid red;}
+.route-wrap{height:168px;width:100%;bottom:40px;position: absolute;left:0;font-size:0;background-color: #111726;
 .route-wrap:before{content:'';display:block;width:100%;height:1px;position: absolute;left:0;top:50%;background-color: #707070;}
 .route-line{position: absolute;left:0;width:100%;}
 .route-line.line1{top:138px;}
@@ -586,9 +596,9 @@ background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(9,9,9,0.89) 50%,rgba
 .route-obj.red{background-color:#f93030;}
 .route-obj.green{background-color:#49b84d;}
 .route-obj.yellow{background-color:#efce48;}
-.i-vms, .i-vds{display:inline-block;position:absolute;font-size:33px;font-weight:500;font-family:'Roboto';padding:13px 20px;background-color:#000;min-width:107px;text-align:center;}
-.i-vms{border:2px solid #00b1ff;color:#00b1ff;}
-.i-vds{border:2px solid #ffaa00;color:#ffaa00;}
+.i-vms, .i-vds{display:inline-block;position:absolute;font-size:12px;font-weight:500;font-family:'Roboto';padding:5px 4.5px;background-color:#000;min-width:36px;text-align:center;}
+.i-vms{border:1px solid #00b1ff;color:#00b1ff;}
+.i-vds{border:1px solid #ffaa00;color:#ffaa00;}
 
 .iv-co,
 .iv-num{display:inline-block;width:50px;height:50px;background-color: #000;position: absolute;}
