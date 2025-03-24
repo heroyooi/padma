@@ -11,6 +11,7 @@
     <div id="dashboard-n8">
       
       <div class="n8-road-wrap">
+        <div class="n8-road-top"></div>
         <span class="n8-road-bg t"></span>
         <span class="n8-road-bg l"></span>
         <span class="n8-road-bg r"></span>
@@ -20,7 +21,7 @@
         <div class="n8-road-tit">
           <h1>N8 Operation Status Monitoring</h1>
         </div>
-        <div class="n8-map-wrap" id="n8Map"></div>
+        <!-- <div class="n8-map-wrap" id="n8Map"></div> -->
         <div class="n8-demo-box"></div>
         <div class="n8-flo-wrp lt">
           <div class="n8-flo-cont">
@@ -108,7 +109,7 @@
               <div class="n8-flo-inner">
                 <a href="#" class="btn-close"></a>
                 <ul class="equiment-list">
-                  <li class="warning">
+                  <li>
                     <dl>
                       <dt><div><em>1</em>/4</div></dt>
                       <dd>VMS</dd>
@@ -120,13 +121,13 @@
                       <dd>CCTV</dd>
                     </dl>
                   </li>
-                  <li class="warning">
+                  <li>
                     <dl>
                       <dt><div><em>2</em>/18</div></dt>
                       <dd>VDS</dd>
                     </dl>
                   </li>
-                  <li class="warning">
+                  <li>
                     <dl>
                       <dt><div><em>1</em>/8</div></dt>
                       <dd>LCS</dd>
@@ -242,7 +243,7 @@
                       <div class="acc-cont">
                         <div class="tx-wrp">
                           <span class="label">Register</span>
-                          <span class="title">Traffic accidentsTraffic accidents</span>
+                          <span class="title">Traffic accidentsTraffic accidents accidents accidents</span>
                         </div>
                         <span class="date">hh:mm ~ hh:mm</span>
                       </div>
@@ -584,7 +585,7 @@
       // }).addTo(map);
 
       $(document).ready(function() {
-        initMap();
+        // initMap();
       });
     }
 
@@ -705,19 +706,12 @@
       $('.n8-bottom-wrap').hide();
     });
 
-    // 시설물 장애 발생시 붉은색으로 깜빡임 효과
-    var eqInterval = setInterval(function(){
-      $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').toggleClass('warning');
-    }, 500);
-
-    // - 5초간 효과 발생 후 효과 중지 및 본 색깔 표출
-    setTimeout(function(){
-      clearInterval(eqInterval);
-      $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').removeClass('warning');
-    }, 5000);
+    
 
     $('.evt-vms').on('click', function(){
       if (!$(this).hasClass('on')) {
+        $('.evt-vms.on').removeClass('on');
+        $('.route-panel').hide();
         $(this).addClass('on');
         $(this).next('.route-panel').show();
       } else {
@@ -728,6 +722,8 @@
 
     var query = $.urlParam('sample');
     var qdemo = $.urlParam('demo');
+    var qep = $.urlParam('ep');
+
     if (qdemo) {
       setTimeout(() => {
         if (qdemo == '1') {
@@ -739,6 +735,16 @@
         } else if (qdemo == '3') {
           $('.n8-flo-text.t1, .n8-flo-text.t2, .n8-flo-text.t3, .n8-flo-text.t4').click();
           $('.evt-click-ico, .cctv-wrap .i-cctv:eq(1)').click();
+          if (qep == '1') {
+            setTimeout(function(){
+              $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').addClass('warning');
+            }, 500);
+          } else if (qep == '2') {
+            $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').addClass('warning');
+            setTimeout(function(){
+              $('.equiment-list > li:nth-child(1), .equiment-list > li:nth-child(3), .equiment-list > li:nth-child(4)').removeClass('warning');
+            }, 500);
+          }
         } else if (qdemo == '4') {
           $('.n8-flo-text.t1, .n8-flo-text.t2, .n8-flo-text.t3, .n8-flo-text.t4').click();
           $('.layer-wrp .btn-layer').click();
